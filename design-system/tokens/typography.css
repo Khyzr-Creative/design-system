@@ -1,0 +1,41 @@
+/* ============================================================
+   khyzr — type tokens
+   STATUS: PROVISIONAL (2026-07-08). Mirrors "Khyzr Vision.html".
+   In actual use on the mockup:
+     Outfit           display — hero word (canvas), titles, ledes, quotes
+     Manrope          text/UI — body, buttons
+     JetBrains Mono   technical labels — eyebrows, footer headings, cue
+     Instrument Serif italic editorial accent — hero "starts here." only
+     Noto Naskh Arabic — the خضر brand moment only
+   Dropped: Space Grotesk (loaded but unused).
+   Display face LOCKED (2026-07-08): Outfit — TWK Everett considered, not licensed.
+   AMENDED 2026-09-19 (Cisc): ONE FAMILY. Outfit carries display, text and UI, at three
+   weights by role (--fw-display 600, --fw-ui 500, --fw-text 400). Manrope is no longer the
+   text face: it is the technical register only (--font-tech: eyebrows, labels, indices,
+   footer headings, cues; 11-13px). JetBrains Mono is retired: the system has no monospace.
+   --font-mono survives as a DEPRECATED alias of --font-tech until nothing reads it.
+   The list above describes the frozen mockup, not this amendment.
+   ============================================================ */
+:root{
+  --font-display:"Outfit",system-ui,sans-serif;
+  --font-text:"Outfit",system-ui,sans-serif;
+  --font-tech:"Manrope",system-ui,sans-serif;   /* small technical text only, 11-13px */
+  --font-mono:var(--font-tech);                 /* DEPRECATED alias (2026-09-19): use --font-tech */
+  --font-serif-accent:"Instrument Serif",Georgia,serif;
+  --font-arabic:"Noto Naskh Arabic","Times New Roman",serif;
+
+  /* weights by role, never by eye */
+  --fw-display:600; --fw-ui:500; --fw-text:400;
+
+  /* scale — from the mockup */
+  --text-hero-word:clamp(54px,12.5vw,210px);   /* display w500, uppercase, -0.02em */
+  --text-title:clamp(2.1rem,4.6vw,3.7rem);     /* display w700, -0.027em, lh 1.02 */
+  --text-quote:clamp(1.65rem,3.5vw,2.9rem);    /* display w600, -0.022em, lh 1.16 */
+  --text-lede:clamp(1.06rem,1.5vw,1.32rem);    /* display w400, lh 1.55 */
+  --text-body:16px;                            /* text, lh 1.55–1.6 */
+  --text-eyebrow:12px;                         /* tech (Manrope 600), .16em tracking, uppercase */
+  --text-label:11px;                           /* tech (Manrope 600), .10em tracking, uppercase */
+
+  --tracking-display:-0.027em;
+  --tracking-eyebrow:.16em;                    /* was .24em under the mono; Manrope sets wider */
+}

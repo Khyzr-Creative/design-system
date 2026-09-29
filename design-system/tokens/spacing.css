@@ -1,0 +1,27 @@
+/* ============================================================
+   khyzr — spacing & geometry tokens
+   LOCKED 2026-07-08. Scale applies to new work; existing mockup
+   values migrate opportunistically as sections get touched.
+   ============================================================ */
+:root{
+  /* spacing scale (4-base) */
+  --space-1:12px;
+  --space-2:16px;
+  --space-3:24px;
+  --space-4:32px;
+  --space-5:40px;
+  --space-6:64px;
+  /* fluid section rhythm (from the mockup) */
+  --section-pad-y:clamp(88px,14vh,180px);
+  --section-pad-x:clamp(24px,5vw,96px); /* = the gutter (widened 2026-07-14) */
+  --gutter:clamp(24px,5vw,96px); /* @kind spacing */
+  --container:1560px;           /* widened 2026-07-14 (was 1180) */
+  --measure-reading:1180px;     /* manifesto & long-form measure */
+  --measure-lede:600px;
+
+  /* radii — locked set (15 & 18 migrated to 16) */
+  --radius-s:9px;      /* nav links, small chips */
+  --radius-m:16px;     /* cards, nav bar, code blocks */
+  --radius-l:20px;     /* bands, grids, heroes */
+  --radius-pill:999px; /* all buttons */
+}

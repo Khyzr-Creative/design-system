@@ -1,0 +1,19 @@
+/* ============================================================
+   khyzr — motion tokens. ADOPTED 2026-07-14 (The Green Trace),
+   rev 07-15 (root-anchored rise, no blur). Mirrors chapter 09.
+   Springs move TRANSFORMS only — color/opacity on standard ease.
+   Entrances: rise 30px, scale .96→1 anchored 50% 100%, overlap.
+   Nothing animates twice; reduced-motion = final states.
+   ============================================================ */
+:root{
+  --ease-trace:cubic-bezier(.34,1.45,.64,1);  /* @kind other */ /* entrances */
+  --ease-pop:cubic-bezier(.34,1.56,.64,1);    /* @kind other */ /* hovers, pulses */
+  --ease-drift:cubic-bezier(.22,.9,.36,1);    /* @kind other */ /* growing bars/widths */
+  --dur-enter:900ms;     /* @kind other */
+  --dur-stagger:140ms;   /* @kind other */ /* overlapping */
+  --dur-hover:500ms;     /* @kind other */
+  --dur-pulse:420ms;     /* @kind other */
+  --dur-count:1600ms;    /* @kind other */
+  --rise-distance:30px;  /* @kind other */
+  --rise-scale:.96;      /* @kind other */
+}

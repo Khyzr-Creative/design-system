@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<script>document.documentElement.classList.add("js")</script>
+<title>Foundations · khyzr design system</title>
+<meta name="description" content="Layout, radii, hairlines and shadows, motion and spacing — the structural values.">
+<link rel="icon" href="../design-system/assets/logos/khyzr-favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../design-system/styles.css">
+<link rel="stylesheet" href="../site.css">
+
+<script src="../site.js" defer></script>
+</head>
+<body class="is-chapter" data-root="../">
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar"><a class="brand" href="../"><img src="../design-system/assets/logos/khyzr-wordmark_on-light.svg" alt="khyzr" width="96"><span>Design system</span></a>
+<div class="search" hidden><label class="sr" for="q">Search the design system</label><input id="q" type="search" placeholder="Search" autocomplete="off"><div class="results" role="listbox"></div></div>
+<button class="menu" type="button" aria-expanded="false" aria-controls="nav">Chapters</button></header>
+<div class="shell">
+<nav id="nav" class="nav" aria-label="Chapters"><p class="nav-part">Foundations</p><ul><li><a href="../foundations/" aria-current="page"><span class="n">01</span>Foundations</a></li><li><a href="../color/"><span class="n">02</span>Color</a></li><li><a href="../type/"><span class="n">03</span>Type</a></li><li><a href="../voice/"><span class="n">04</span>Voice</a></li></ul><p class="nav-part">Expression</p><ul><li><a href="../logos/"><span class="n">05</span>Logos</a></li><li><a href="../icons/"><span class="n">06</span>Icons</a></li><li><a href="../imagery/"><span class="n">07</span>Imagery</a></li><li><a href="../pattern/"><span class="n">08</span>Pattern</a></li><li><a href="../motion/"><span class="n">09</span>Motion</a></li></ul><p class="nav-part">Interface</p><ul><li><a href="../components/"><span class="n">10</span>Components</a></li><li><a href="../forms/"><span class="n">11</span>Forms</a></li><li><a href="../data/"><span class="n">12</span>Data</a></li></ul><p class="nav-part">Documents</p><ul><li><a href="../documents/"><span class="n">13</span>Documents</a></li></ul></nav>
+<main id="main"><header class="chapter-head"><p class="eyebrow"><span class="dash"></span>01 · Foundations</p><h1>Foundations</h1><p class="lead">Layout, radii, hairlines and shadows, motion and spacing — the structural values.</p></header><div class="chapter"><div class="prose"><section class="sec" id="layout"><h2><a class="anchor" href="#layout">Layout</a></h2>
+<p>One container, generous air. The container is <code>container</code>, centered, with fluid <code>gutter</code> margins — slim at 1080p, generous and centered above. Reading measures never track the container.</p>
+<div class="specimen"><div class="table"><table><thead><tr><th>Token</th><th>Value</th><th>Use</th></tr></thead><tbody><tr><td><code>container</code></td><td>1560px</td><td></td></tr><tr><td><code>gutter</code></td><td>clamp(24px,5vw,96px)</td><td></td></tr><tr><td><code>section-pad-y</code></td><td>clamp(88px,14vh,180px)</td><td></td></tr><tr><td><code>measure-reading</code></td><td>1180px</td><td>manifesto &amp; long-form measure</td></tr><tr><td><code>measure-lede</code></td><td>600px</td><td></td></tr></tbody></table></div></div>
+<ul><li>Sections alternate White and <code>surface-2</code>; green-900 interludes punctuate them (voices, the name, the CTA band). The footer is always Ink.</li><li>Reading measures stay editorial: the lede runs at <code>measure-lede</code>, the manifesto and long-form at <code>measure-reading</code>.</li></ul>
+<h3>Section padding</h3>
+<div class="table"><table><thead><tr><th>Surface</th><th>Padding</th></tr></thead><tbody><tr><td>Sections</td><td><code>section-pad-y</code></td></tr><tr><td>Interludes</td><td>clamp(96px, 13vh, 180px)</td></tr><tr><td>Voices</td><td>clamp(76px, 10vw, 132px)</td></tr><tr><td>Footer</td><td>clamp(66px, 8vw, 112px), then 40</td></tr></tbody></table></div>
+<h3>Grid recipes</h3>
+<div class="table"><table><thead><tr><th>Grid</th><th>Recipe</th></tr></thead><tbody><tr><td>Cards</td><td>auto-fit, minmax(240px, 1fr), gap 18</td></tr><tr><td>Cells</td><td>auto-fill, minmax(290px, 1fr), gap 1px</td></tr><tr><td>Rules</td><td>auto-fit, minmax(180px, 1fr), gap 36 / 30</td></tr><tr><td>Footer</td><td>1.4fr + 5 × 1fr, gap 40 / 28</td></tr></tbody></table></div>
+<h3>Reading measures</h3>
+<div class="table"><table><thead><tr><th>Measure</th><th>Width</th></tr></thead><tbody><tr><td>Lede</td><td><code>measure-lede</code></td></tr><tr><td>Hero tagline</td><td>700</td></tr><tr><td>Voices</td><td>1060</td></tr><tr><td>Manifesto, long-form</td><td><code>measure-reading</code></td></tr><tr><td>Footer headline</td><td>14ch</td></tr></tbody></table></div>
+</section>
+<section class="sec" id="radii"><h2><a class="anchor" href="#radii">Radii</a></h2>
+<p>Four corners, and nothing in between.</p>
+<div class="specimen"><div class="radii"><figure><div class="rbox" style="border-radius:var(--radius-s)"></div><figcaption><code>radius-s</code> 9px<span class="note">nav links, small chips</span></figcaption></figure><figure><div class="rbox" style="border-radius:var(--radius-m)"></div><figcaption><code>radius-m</code> 16px<span class="note">cards, nav bar, code blocks</span></figcaption></figure><figure><div class="rbox" style="border-radius:var(--radius-l)"></div><figcaption><code>radius-l</code> 20px<span class="note">bands, grids, heroes</span></figcaption></figure><figure><div class="rbtn" style="border-radius:var(--radius-pill)">Book a conversation</div><figcaption><code>radius-pill</code> 999px<span class="note">all buttons</span></figcaption></figure></div></div>
+<ul><li><code>radius-s</code> — nav links and small chips.</li><li><code>radius-m</code> — cards, the nav bar, code blocks.</li><li><code>radius-l</code> — bands, grids, heroes.</li><li><code>radius-pill</code> — every button. All buttons are pills.</li></ul>
+</section>
+<section class="sec" id="hairlines-and-shadows"><h2><a class="anchor" href="#hairlines-and-shadows">Hairlines and shadows</a></h2>
+<p>Flat by default, depth on demand. Resting UI is bordered, not shadowed.</p>
+<div class="specimen"><div class="depth"><figure><div class="d rest"></div><figcaption>Resting: 1px <code>hairline</code>, no shadow</figcaption></figure><figure><div class="d hover"></div><figcaption>Hover and floating only: soft, large blur, negative spread</figcaption></figure><figure><div class="d dark"></div><figcaption>On dark: <code>on-dark-border</code>, never a shadow</figcaption></figure></div></div>
+<ul><li>At rest, a surface carries a 1px <code>hairline</code> border and no shadow. Cards stay flat: white on white, separated by the hairline, with the alt band for rhythm.</li><li>Shadows appear only on hover and on floating elements — always soft, large-blur, negative-spread.</li><li>The nav in its paper state is shadowless: white at 97% over a hairline.</li><li>On dark surfaces, borders are white at 10–11% (<code>on-dark-border</code>) and dividers white at 10% (<code>on-dark-divider</code>). Dark surfaces take no shadows.</li></ul>
+<h3>Shadow recipes</h3>
+<div class="table"><table><thead><tr><th>Element</th><th>Shadow</th></tr></thead><tbody><tr><td>Card, on hover</td><td>0 22px 40px −26px, Ink at 32%</td></tr><tr><td>Button, on hover</td><td>0 14px 30px −12px, black at 55%</td></tr></tbody></table></div>
+</section>
+<section class="sec" id="motion"><h2><a class="anchor" href="#motion">Motion</a></h2>
+<p>The Green Trace, in brief. The full grammar lives in the Motion chapter: springs move things, never colors; entrances overlap; nothing animates twice. Everything respects <code>prefers-reduced-motion</code>, which shows the final states.</p>
+<h3>Reveal — the root-anchored rise</h3>
+<p>Things grow in. An entrance rises <code>rise-distance</code> to rest and scales from <code>rise-scale</code> to 1, anchored at the element's baseline, over <code>dur-enter</code> on the <code>ease-trace</code> spring. Items in a group follow <code>dur-stagger</code> apart, overlapping.</p>
+<div class="specimen"><div class="demo" data-demo="rise"><div class="demo-stage"><div class="chip-rise" style="--i:0">Eyebrow</div><div class="chip-rise" style="--i:1">Title rises next</div><div class="chip-rise" style="--i:2">Then the lede</div></div><button type="button" class="btn ghost-light" data-replay>Replay</button></div></div>
+<ul><li>Springs move transforms only. Color and opacity change on a plain ease.</li></ul>
+<h3>Micro-interactions</h3>
+<div class="table"><table><thead><tr><th>Element</th><th>Behaviour</th></tr></thead><tbody><tr><td>Buttons</td><td>grow to 1.05 on <code>ease-pop</code>, <code>dur-hover</code></td></tr><tr><td>Cards</td><td>lift −3px, tilt −.4°, scale 1.015</td></tr><tr><td>Arrows</td><td>slide +4px on <code>ease-pop</code></td></tr><tr><td>Counts</td><td>run <code>dur-count</code>, then a settle pulse to 1.07</td></tr></tbody></table></div>
+<h3>Keyboard focus</h3>
+<p>A 2px outline in <code>focus-ring</code>, khyzr Green, offset 3px outside the element. On dark, the outline is white.</p>
+<h3>Selection</h3>
+<p>Text selection tints with <code>selection</code>, a translucent khyzr Green.</p>
+</section>
+<section class="sec" id="spacing"><h2><a class="anchor" href="#spacing">Spacing</a></h2>
+<p>The scale, locked in July 2026: six steps, <code>space-1</code> to <code>space-6</code>, plus the fluid section clamps (<code>section-pad-y</code>, <code>gutter</code>).</p>
+<div class="specimen"><div class="spacing"><div class="sp"><span class="bar" style="width:var(--space-1)"></span><code>space-1</code><span class="val">12px</span></div><div class="sp"><span class="bar" style="width:var(--space-2)"></span><code>space-2</code><span class="val">16px</span></div><div class="sp"><span class="bar" style="width:var(--space-3)"></span><code>space-3</code><span class="val">24px</span></div><div class="sp"><span class="bar" style="width:var(--space-4)"></span><code>space-4</code><span class="val">32px</span></div><div class="sp"><span class="bar" style="width:var(--space-5)"></span><code>space-5</code><span class="val">40px</span></div><div class="sp"><span class="bar" style="width:var(--space-6)"></span><code>space-6</code><span class="val">64px</span></div></div></div>
+<ul><li>Every new value comes from the scale.</li></ul>
+</section><nav class="pager"><span></span><a class="next" href="../color/"><span class="tech">Next</span>Color</a></nav></div><aside class="toc" aria-label="On this page"><p class="tech">On this page</p><ul><li><a href="#layout">Layout</a></li><li><a href="#radii">Radii</a></li><li><a href="#hairlines-and-shadows">Hairlines and shadows</a></li><li><a href="#motion">Motion</a></li><li><a href="#spacing">Spacing</a></li></ul></aside></div></main>
+</div>
+<footer class="foot"><img src="../design-system/assets/logos/khyzr-wordmark_on-dark.svg" alt="khyzr" width="104"><p>Built from the khyzr design system's own files. Tokens are the values; where prose and a token disagree, the token wins.</p></footer>
+</body></html>

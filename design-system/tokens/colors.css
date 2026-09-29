@@ -1,0 +1,87 @@
+/* ============================================================
+   khyzr — color tokens
+   STATUS: ADOPTED 2026-08-08 — "Verdant standard" (lab sheet 21 — labs retired, backed up).
+   The supplied dark green leads everything; cobalt / marigold /
+   terracotta / steel are the working secondaries. The greens scale
+   is rebuilt around the supplied primary (pure 120° hue) — tints
+   read sage now, not mint. Labs retired 2026-08-08; previous palette lives in the external backup.
+   ============================================================ */
+:root{
+  /* ---- brand core (Verdant standard) ---- */
+  --khyzr-green:#0A690A;   /* primary — supplied dark green · 6.9:1 on paper, text-safe as-is */
+  --forest:#064606;        /* supplied deep green — hover/pressed, deep fills */
+  --deep-forest:#053805;   /* deepest solid */
+  --mint:#85B485;          /* light sage (keeps the old token name) */
+
+  /* ---- greens scale (functional, hue-consistent) ---- */
+  --green-050:#EFF7EF;
+  --green-100:#DBE9DB;     /* pale sage · also a gradient stop */
+  --green-200:#A9CBA9;
+  --green-300:#91BC91;     /* green-bright — on-dark accent */
+  --green-400:#3B873B;
+  --green-500:#0A690A;     /* = khyzr green · 6.9:1 on paper */
+  --green-600:#085808;     /* pressed state on the primary */
+  --green-700:#064606;     /* = forest */
+  --green-800:#053805;     /* = deep forest */
+  --green-900:#043304;     /* ink — dark surfaces, gradient anchor */
+
+  /* ---- secondaries — ADOPTED 2026-08-08 (Verdant standard) ---- */
+  --cobalt:#2F5FB5;          /* info · 6.1:1 on paper — text-safe */
+  --marigold:#E8A93C;        /* highlight · graphics only (2.1:1) */
+  --marigold-text:#946C26;   /* AA twin — marigold as copy */
+  --terracotta:#C2582F;      /* signal · large text only (4.4:1) */
+  --terracotta-text:#B6532C; /* AA twin — signal as copy */
+  --steel:#6E7B8A;           /* wash · quiet data (4.3:1) */
+  --steel-text:#677482;      /* AA twin — steel as copy */
+
+  /* ---- neutrals (green-cast) ---- */
+  --paper:#FFFFFF;         /* page canvas — white (Cisc, 2026-09-29; was the supplied light green #F7FFF7) */
+  --surface:#FFFFFF;       /* cards */
+  --surface-2:#F5F5F5;     /* alt sections — neutral since 2026-09-29 (was #F0F7F0) */
+  --hairline:#E7E7E7;      /* borders — neutral since 2026-09-29 (was #E4E9E2) */
+  --faint:#8B938C;         /* captions */
+  --muted:#5D665F;         /* secondary text */
+  --body:#262D29;          /* body text */
+  --ink:#0A0A0A;           /* headings / workhorse black */
+  --pitch:#030503;         /* dark surfaces · gradient anchor (NOT a text color) */
+
+  /* ---- on-dark (text on Ink/green-900 surfaces) ---- */
+  --on-dark-heading:#FFFFFF;
+  --on-dark-soft:#EEF2EE;            /* statement-band text */
+  --on-dark-body:#C8CEC9;            /* footer links, body */
+  --on-dark-muted:#8D948F;
+  --on-dark-faint:#7B827D;           /* labels, legal */
+  --on-dark-accent:var(--green-300); /* sage accent word */
+  --on-dark-divider:rgba(255,255,255,.10);
+  --on-dark-border:rgba(255,255,255,.11);
+
+  /* ---- website roles ---- */
+  --bg:var(--paper);
+  --text-heading:var(--ink);
+  --text-body:var(--body);
+  --link:var(--green-500);            /* the primary is text-safe (6.9:1) */
+  --accent:var(--green-500);
+  --accent-bright:var(--green-300);   /* on dark backgrounds */
+  --focus-ring:var(--green-500);
+  --info:var(--cobalt);               /* informational chips, links-out, scheduled states */
+  --highlight:var(--marigold);        /* emphasis graphics, number accents */
+  --highlight-text:var(--marigold-text);
+  --success:var(--green-500);
+  --error:var(--terracotta-text);     /* terracotta family — replaces proposed #B25046 */
+  --selection:rgba(10,105,10,.16);
+
+  /* ---- data-viz roles — RECUT 2026-08-08 (chapter 12: Khyzr Data.dc.html) ---- */
+  --viz-lead:var(--green-500);      /* series 1, always green */
+  --viz-lead-deep:var(--green-700); /* line strokes, endpoint dots */
+  --viz-2:var(--cobalt);            /* second series — info blue */
+  --viz-3:var(--steel);             /* third series, comparison ghosts */
+  --viz-4:#C4CBD1;                  /* steel tint — fourth series, remainders */
+  --signal:var(--terracotta);       /* flags/negatives/annotations only; never a series, never chrome */
+  --signal-text:var(--terracotta-text); /* terracotta for small text & on tints */
+  --signal-tint:#F8EBE6;            /* wash behind signal chips */
+
+  /* ---- brand gradient (recut for Verdant standard) ---- */
+  --gradient-hero:linear-gradient(to bottom in oklab,#030503 0%,#043304 36%,#064606 58%,#2F802F 71%,#85B485 84%,#DBE9DB 93%,#FFFFFF 100%); /* @kind other */
+  --gradient-hero-srgb:linear-gradient(to bottom,#030503 0%,#043304 36%,#064606 58%,#2F802F 71%,#85B485 84%,#DBE9DB 93%,#FFFFFF 100%); /* @kind other */
+  /* gradient-only colors: bright leaf #2F802F, pitch #030503 */
+}

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<script>document.documentElement.classList.add("js")</script>
+<title>Pattern · khyzr design system</title>
+<meta name="description" content="Paper cutouts in the brand greens — generative, seeded, always deliberate. This is the website&#x27;s texture, and it dresses sections and elements, never whole pages.">
+<link rel="icon" href="../design-system/assets/logos/khyzr-favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../design-system/styles.css">
+<link rel="stylesheet" href="../site.css">
+<script src="../design-system/assets/pattern/khyzr-pattern.js" defer></script>
+<script src="../site.js" defer></script>
+</head>
+<body class="is-chapter" data-root="../">
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar"><a class="brand" href="../"><img src="../design-system/assets/logos/khyzr-wordmark_on-light.svg" alt="khyzr" width="96"><span>Design system</span></a>
+<div class="search" hidden><label class="sr" for="q">Search the design system</label><input id="q" type="search" placeholder="Search" autocomplete="off"><div class="results" role="listbox"></div></div>
+<button class="menu" type="button" aria-expanded="false" aria-controls="nav">Chapters</button></header>
+<div class="shell">
+<nav id="nav" class="nav" aria-label="Chapters"><p class="nav-part">Foundations</p><ul><li><a href="../foundations/"><span class="n">01</span>Foundations</a></li><li><a href="../color/"><span class="n">02</span>Color</a></li><li><a href="../type/"><span class="n">03</span>Type</a></li><li><a href="../voice/"><span class="n">04</span>Voice</a></li></ul><p class="nav-part">Expression</p><ul><li><a href="../logos/"><span class="n">05</span>Logos</a></li><li><a href="../icons/"><span class="n">06</span>Icons</a></li><li><a href="../imagery/"><span class="n">07</span>Imagery</a></li><li><a href="../pattern/" aria-current="page"><span class="n">08</span>Pattern</a></li><li><a href="../motion/"><span class="n">09</span>Motion</a></li></ul><p class="nav-part">Interface</p><ul><li><a href="../components/"><span class="n">10</span>Components</a></li><li><a href="../forms/"><span class="n">11</span>Forms</a></li><li><a href="../data/"><span class="n">12</span>Data</a></li></ul><p class="nav-part">Documents</p><ul><li><a href="../documents/"><span class="n">13</span>Documents</a></li></ul></nav>
+<main id="main"><header class="chapter-head"><p class="eyebrow"><span class="dash"></span>08 · Expression</p><h1>Pattern</h1><p class="lead">Paper cutouts in the brand greens — generative, seeded, always deliberate. This is the website's texture, and it dresses sections and elements, never whole pages.</p></header><div class="chapter"><div class="prose"><section class="sec" id="the-asset"><h2><a class="anchor" href="#the-asset">The asset</a></h2>
+<p>Two themes, one component. The pattern is a single element, <code>&lt;khyzr-pattern&gt;</code>, from <code>khyzr-pattern.js</code> in the design system's pattern assets. Production uses this asset. It was adopted as the official website texture on 2026-07-13.</p>
+<p>The element is static, deterministic and sized by its container. Any number of instances share one WebGL context. Without WebGL it paints a quiet solid fill in its theme's canvas color.</p>
+<div class="specimen"><div class="pair pattern-pair"><div class="pat"><khyzr-pattern theme="dark" seed="7"></khyzr-pattern><p>theme="dark"</p></div><div class="pat light"><khyzr-pattern theme="light" seed="7"></khyzr-pattern><p>theme="light"</p></div></div></div>
+<ul><li><strong>Dark</strong> is the default and its look is locked: the <code>green-900</code> canvas, with the palette shapes composited at 10% and pre-flattened. Text is safe on it as it is.</li><li><strong>Light</strong> is grayscale, at 50% strength on a #E9E9E9 canvas. Text on it stays at <code>body</code> or darker, and long-form copy needs a solid panel.</li><li><strong>Seeded</strong> means the same composition on every load.</li></ul>
+<h3>Attributes</h3>
+<div class="table"><table><thead><tr><th>Attribute</th><th>What it does</th></tr></thead><tbody><tr><td><code>theme</code></td><td><code>dark</code> (the default) or <code>light</code></td></tr><tr><td><code>seed</code></td><td>any number; sets a deterministic composition (default 7)</td></tr><tr><td><code>scale</code></td><td>cutout size multiplier, sensible from 0.5 to 2 (default 1)</td></tr><tr><td><code>animate</code></td><td>when present, a slow ambient drift — moved by CSS transform only, with no re-rendering, and off automatically under reduced motion</td></tr></tbody></table></div>
+<p>Place the element absolutely, filling a positioned container that clips its overflow, and set the content above it.</p>
+<div class="specimen"><div class="pattern-live" data-pattern-live><div class="pat big"><khyzr-pattern theme="dark" seed="7" scale="1"></khyzr-pattern></div><form class="controls" onsubmit="return false"><label>Theme <select name="theme"><option>dark</option><option>light</option></select></label><label>Seed <input name="seed" type="number" value="7" min="0" max="999"></label><label>Scale <input name="scale" type="range" min="0.5" max="2" step="0.05" value="1"><output>1</output></label><code class="tag">&lt;khyzr-pattern theme="dark" seed="7" scale="1"&gt;</code></form><noscript><p class="caption">The live controls need JavaScript; the pattern above shows seed 7.</p></noscript></div></div>
+<h3>Do and don't</h3>
+<div class="table"><table><thead><tr><th>Do</th><th>Don't</th></tr></thead><tbody><tr><td>Hero bands, CTA cards, stat strips, dividers, footer caps</td><td>Full-page backgrounds — it's seasoning, not the plate</td></tr><tr><td>Card media slots and empty states</td><td>Long-form body copy on the light theme without a solid panel</td></tr><tr><td>Set text directly on the <strong>dark</strong> theme — shapes are 10% tints, quiet by design</td><td>Recoloring, gradients on top, or mixing themes in one section</td></tr><tr><td>Pick a seed per surface and keep it — compositions are part of the design</td><td>More than two pattern surfaces in a viewport</td></tr></tbody></table></div>
+<ul><li>Sections, cards, media slots and dividers — never the page background.</li><li>Never recolor. The themes are the only variations.</li><li>A photo and the pattern never share a band.</li></ul>
+</section>
+<section class="sec" id="hero-band"><h2><a class="anchor" href="#hero-band">Hero band</a></h2>
+<p>The dark hero band: dark theme, seed 7, scale 1.</p>
+<ul><li>No scrim needed — the copy sits straight on the pattern.</li><li>The headline is Outfit at the display weight (<code>fw-display</code>), in <code>on-dark-heading</code>.</li><li>The calls to action are the white button and the hero ghost button from Components.</li></ul>
+</section>
+<section class="sec" id="bands-and-dividers"><h2><a class="anchor" href="#bands-and-dividers">Bands and dividers</a></h2>
+<h3>Stat strip</h3>
+<ul><li>Dark theme, seed 33, scale 0.8 — a finer field under small type.</li><li>Numbers in Outfit 600 at 46px.</li><li>One accent figure at most, in <code>green-300</code>.</li></ul>
+<h3>Section divider</h3>
+<ul><li>Dark theme, seed 5, scale 0.6, 110px high.</li><li>Label only — a divider never carries body copy.</li></ul>
+</section>
+<section class="sec" id="cards"><h2><a class="anchor" href="#cards">Cards</a></h2>
+<p>Pattern as card media, shown on the service cards.</p>
+<ul><li>The media cap is 150px high: dark theme, seeds 11, 23 and 31, scale 0.7.</li><li>One seed per card, fixed. Siblings must differ.</li><li>The card body stays on solid white.</li></ul>
+</section>
+<section class="sec" id="light-theme"><h2><a class="anchor" href="#light-theme">Light theme</a></h2>
+<h3>CTA card</h3>
+<ul><li>Light theme, seed 21, scale 0.85, radius <code>radius-l</code>.</li><li>Short copy only on the light pattern — headings, and ink text at <code>body</code> or darker.</li></ul>
+<h3>Pull quote</h3>
+<ul><li>Light theme, seed 40, scale 0.9.</li><li>Instrument Serif italic is the page's one serif accent (the Voice rule).</li></ul>
+</section>
+<section class="sec" id="footer-cap"><h2><a class="anchor" href="#footer-cap">Footer cap</a></h2>
+<p>The closing band.</p>
+<ul><li>Dark theme, seed 3, scale 1.2 — a calmer, larger field.</li><li>The on-dark wordmark at 34px high.</li><li>The legal row in <code>on-dark-faint</code>.</li></ul>
+</section>
+<section class="sec" id="seeds-in-use"><h2><a class="anchor" href="#seeds-in-use">Seeds in use</a></h2>
+<p>One seed per surface, fixed — the compositions are part of the design. These are the seeds and scales the chapter's examples hold.</p>
+<div class="table"><table><thead><tr><th>Surface</th><th>Theme</th><th>Seed</th><th>Scale</th></tr></thead><tbody><tr><td>Theme samples</td><td>dark and light</td><td>7</td><td>1</td></tr><tr><td>Hero band</td><td>dark</td><td>7</td><td>1</td></tr><tr><td>Stat strip</td><td>dark</td><td>33</td><td>0.8</td></tr><tr><td>Section divider</td><td>dark</td><td>5</td><td>0.6</td></tr><tr><td>Service cards</td><td>dark</td><td>11 · 23 · 31</td><td>0.7</td></tr><tr><td>CTA card</td><td>light</td><td>21</td><td>0.85</td></tr><tr><td>Pull quote</td><td>light</td><td>40</td><td>0.9</td></tr><tr><td>Footer cap</td><td>dark</td><td>3</td><td>1.2</td></tr></tbody></table></div>
+</section><nav class="pager"><a class="prev" href="../imagery/"><span class="tech">Previous</span>Imagery</a><a class="next" href="../motion/"><span class="tech">Next</span>Motion</a></nav></div><aside class="toc" aria-label="On this page"><p class="tech">On this page</p><ul><li><a href="#the-asset">The asset</a></li><li><a href="#hero-band">Hero band</a></li><li><a href="#bands-and-dividers">Bands and dividers</a></li><li><a href="#cards">Cards</a></li><li><a href="#light-theme">Light theme</a></li><li><a href="#footer-cap">Footer cap</a></li><li><a href="#seeds-in-use">Seeds in use</a></li></ul></aside></div></main>
+</div>
+<footer class="foot"><img src="../design-system/assets/logos/khyzr-wordmark_on-dark.svg" alt="khyzr" width="104"><p>Built from the khyzr design system's own files. Tokens are the values; where prose and a token disagree, the token wins.</p></footer>
+</body></html>
