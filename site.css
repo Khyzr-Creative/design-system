@@ -366,3 +366,74 @@ pre.code code { background: none; color: inherit; padding: 0; font-weight: 500; 
   .stage > label, .stage > div { flex-basis: 100%; }
 }
 .component, .stages { grid-template-columns: minmax(0, 1fr); }
+
+/* ---------- product pages: each panel sits on the product's own ground, in its own ink ---------- */
+.pp { border-radius: var(--radius-l); padding: var(--space-3); display: grid; gap: var(--space-2); }
+.pp-h { margin: var(--space-1) 0 0; font-family: var(--font-tech); font-weight: 600; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--pp-soft); }
+.pp-h:first-child { margin-top: 0; }
+.pp-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(132px, 1fr)); gap: 10px; }
+.pp-chip { margin: 0; }
+.pp-sw { height: 64px; border-radius: var(--radius-s); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .08); }
+.pp-chip figcaption { display: grid; gap: 2px; padding-top: 8px; font-size: 12.5px; color: var(--pp-soft); }
+.pp-chip code, .pp code { background: none; padding: 0; color: inherit; font-size: 12.5px; }
+.pp-chip figcaption code { color: var(--pp-text); font-weight: 600; }
+.pp-table table { width: 100%; border-collapse: collapse; }
+.pp-table th { text-align: left; font: 600 11px var(--font-tech); letter-spacing: .1em; text-transform: uppercase; color: var(--pp-soft); padding: 0 12px 10px 0; }
+.pp-table td { padding: 10px 12px 10px 0; border-top: 1px solid rgba(255, 255, 255, .08); vertical-align: baseline; }
+.pp-table td:nth-child(2) { color: var(--pp-soft); white-space: nowrap; }
+.pp-sample { font-family: "Outfit", system-ui, sans-serif; font-weight: 500; line-height: 1.1; letter-spacing: -.01em; white-space: nowrap; }
+.pp-note { margin: 0; font-size: 13px; color: var(--pp-soft); }
+.pp-space { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.pp-space li { display: grid; grid-template-columns: 96px auto 1fr; align-items: center; gap: 12px; font-size: 13px; color: var(--pp-soft); }
+.pp-bar { display: block; height: 10px; border-radius: 2px; background: currentColor; opacity: .5; }
+.pp-corners { display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 10px; }
+.pp-corners figure { margin: 0; display: grid; gap: 8px; }
+.pp-corners figcaption { font-size: 12px; color: var(--pp-soft); }
+.pp-corner { height: 56px; border: 1px solid rgba(255, 255, 255, .28); border-bottom: 0; border-right: 0; }
+@media (max-width: 860px) {
+  .pp { padding: var(--space-2); }
+  .pp-table td:nth-child(2) { white-space: normal; }
+  .pp-space li { grid-template-columns: 80px auto 1fr; }
+}
+.pp .table { margin: 0; border: 0; border-radius: 0; }
+.pp .table th { background: none; }
+.pp .curves { gap: 10px; }
+.pp .curve { border-color: rgba(255, 255, 255, .1); }
+.pp .curve polyline { stroke: var(--pp-accent); }
+.pp .curve .axis { stroke: rgba(255, 255, 255, .14); }
+.pp .curve .target { stroke: rgba(255, 255, 255, .22); }
+.pp .curve figcaption { color: var(--pp-soft); font-size: 12.5px; }
+.pp .curve figcaption code { color: var(--pp-text); font-weight: 600; }
+
+.pp-val { display: none; }
+@media (max-width: 860px) {
+  .pp-table .pp-v { display: none; }
+  .pp-val { display: block; margin-top: 4px; font-size: 12px; color: var(--pp-soft); }
+}
+
+/* ---------- the product pages: the whole interface in the product's own dark scheme ----------
+   build.py sets --pp-* on <html> from the product's own tokens; the site's light-scheme tokens
+   are re-pointed at them here, so every rule above reads the product's ground, ink and accent. */
+html.scheme-dark {
+  color-scheme: dark;
+  --paper: var(--pp-ground); --bg: var(--pp-ground); --surface: var(--pp-raised); --surface-2: var(--pp-raised);
+  --hairline: var(--pp-hair); --ink: var(--pp-text); --text-heading: var(--pp-text); --body: var(--pp-text);
+  --muted: var(--pp-soft); --faint: var(--pp-soft); --link: var(--pp-text);
+  --khyzr-green: var(--pp-accent); --green-600: var(--pp-accent); --green-050: var(--pp-raised);
+  --green-100: var(--pp-hair); --green-200: var(--pp-soft); --deep-forest: var(--pp-text);
+  --focus-ring: var(--pp-focus); --selection: color-mix(in oklab, var(--pp-accent) 40%, transparent);
+  background: var(--pp-ground);
+}
+.scheme-dark .topbar { background: var(--pp-ground); }
+.scheme-dark .search input:focus { background: var(--pp-raised); border-color: var(--pp-accent); box-shadow: none; }
+.scheme-dark .results, .scheme-dark .menu { background: var(--pp-raised); }
+.scheme-dark .prose a:not(.anchor) { text-decoration: underline; text-decoration-color: var(--pp-accent); text-underline-offset: 3px; }
+.scheme-dark .prose a:not(.anchor):hover { color: var(--pp-accent); }
+.scheme-dark .logo { background: var(--pp-ground); }
+.scheme-dark .skip { background: var(--pp-text); color: var(--pp-ground); }
+.scheme-dark .foot { background: var(--pp-raised); border-top: 1px solid var(--pp-hair); }
+.scheme-dark .pp { box-shadow: inset 0 0 0 1px var(--pp-hair); }
+.scheme-dark .cover :focus-visible, .scheme-dark .foot :focus-visible { outline-color: var(--pp-focus); }
+@media (max-width: 860px) {
+  .js.scheme-dark .nav { background: var(--pp-ground); }
+}
