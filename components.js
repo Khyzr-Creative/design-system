@@ -15,7 +15,7 @@ function Button({ variant = 'primary', size = 'm', href, onClick, disabled, chil
   };
   const style = {
     display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 8,
-    fontFamily: 'var(--font-text)', fontWeight: 600, fontSize: fs, lineHeight: 1,
+    fontFamily: 'var(--font-text)', fontWeight: 'var(--fw-ui)', fontSize: fs, lineHeight: 1,
     padding: pad, borderRadius: 'var(--radius-pill)', cursor: disabled ? 'default' : 'pointer',
     textDecoration: 'none', boxSizing: 'border-box', userSelect: 'none',
     opacity: disabled ? .45 : 1, pointerEvents: disabled ? 'none' : 'auto',
@@ -33,13 +33,13 @@ ns.Button = Button;
 function Badge({ tone = 'outline', children }) {
   const looks = {
     solid:   { color: '#fff', background: 'var(--link)', border: '1px solid var(--link)' },
-    outline: { color: 'var(--link)', background: 'transparent', border: '1px solid #cfe3d6' },
+    outline: { color: 'var(--link)', background: 'transparent', border: '1px solid var(--green-100)' },
     neutral: { color: 'var(--faint)', background: 'transparent', border: '1px solid var(--hairline)' },
     mint:    { color: 'var(--deep-forest)', background: 'var(--green-100)', border: '1px solid var(--green-100)' }
   };
   return React.createElement('span', { style: {
     ...looks[tone] || looks.outline, display: 'inline-flex', alignItems: 'center',
-    fontFamily: 'var(--font-mono)', fontSize: 9.5, letterSpacing: '.16em', textTransform: 'uppercase',
+    fontFamily: 'var(--font-tech)', fontWeight: 600, fontSize: 11, letterSpacing: '.10em', textTransform: 'uppercase',
     borderRadius: 'var(--radius-pill)', padding: '3px 9px', lineHeight: 1.4
   } }, children);
 }
@@ -49,11 +49,11 @@ ns.Badge = Badge;
 (function () {
 function Eyebrow({ num, children, onDark }) {
   return React.createElement('p', { style: {
-    margin: 0, fontFamily: 'var(--font-mono)', fontSize: 'var(--text-eyebrow, 12px)',
-    letterSpacing: 'var(--tracking-eyebrow, .24em)', textTransform: 'uppercase',
-    color: onDark ? '#91BC91' : 'var(--faint)', display: 'inline-flex', alignItems: 'center', gap: '.85ch'
+    margin: 0, fontFamily: 'var(--font-tech)', fontWeight: 600, fontSize: 'var(--text-eyebrow, 12px)',
+    letterSpacing: 'var(--tracking-eyebrow, .16em)', textTransform: 'uppercase',
+    color: onDark ? 'var(--green-300)' : 'var(--faint)', display: 'inline-flex', alignItems: 'center', gap: '.85ch'
   } },
-    React.createElement('span', { style: { width: 24, height: 1, background: onDark ? '#91BC91' : 'var(--khyzr-green)' } }),
+    React.createElement('span', { style: { width: 24, height: 1, background: onDark ? 'var(--green-300)' : 'var(--khyzr-green)' } }),
     num ? num + ' · ' + children : children
   );
 }
@@ -64,10 +64,10 @@ ns.Eyebrow = Eyebrow;
 function ProofStat({ value, suffix, label, onDark }) {
   return React.createElement('div', { style: { display: 'flex', flexDirection: 'column', gap: 6, fontFamily: 'var(--font-text)' } },
     React.createElement('div', { style: { display: 'flex', alignItems: 'baseline', gap: 4 } },
-      React.createElement('span', { style: { fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 52, letterSpacing: '-.03em', lineHeight: 1, color: onDark ? '#fff' : 'var(--deep-forest)', fontVariantNumeric: 'tabular-nums' } }, value),
-      suffix && React.createElement('span', { style: { fontFamily: 'var(--font-display)', fontWeight: 600, fontSize: 28, color: onDark ? '#91BC91' : 'var(--khyzr-green)' } }, suffix)
+      React.createElement('span', { style: { fontFamily: 'var(--font-display)', fontWeight: 'var(--fw-display)', fontSize: 52, letterSpacing: '-.03em', lineHeight: 1, color: onDark ? '#fff' : 'var(--deep-forest)', fontVariantNumeric: 'tabular-nums' } }, value),
+      suffix && React.createElement('span', { style: { fontFamily: 'var(--font-display)', fontWeight: 'var(--fw-display)', fontSize: 28, color: onDark ? 'var(--green-300)' : 'var(--khyzr-green)' } }, suffix)
     ),
-    label && React.createElement('span', { style: { fontFamily: 'var(--font-mono)', fontSize: 10, letterSpacing: '.14em', textTransform: 'uppercase', color: onDark ? '#8D948F' : 'var(--faint)' } }, label)
+    label && React.createElement('span', { style: { fontFamily: 'var(--font-tech)', fontWeight: 600, fontSize: 11, letterSpacing: '.10em', textTransform: 'uppercase', color: onDark ? 'var(--on-dark-muted)' : 'var(--faint)' } }, label)
   );
 }
 ns.ProofStat = ProofStat;
@@ -77,17 +77,18 @@ ns.ProofStat = ProofStat;
 function PlateField({ label, helper, error, textarea, onDark, placeholder, value, onChange, disabled, type = 'text', rows = 4 }) {
   const [focus, setFocus] = React.useState(false);
   const base = onDark ? {
-    background: focus ? 'rgba(255,255,255,.12)' : 'rgba(255,255,255,.08)',
-    border: '1px solid ' + (error ? '#E08A80' : focus ? '#91BC91' : 'transparent'),
-    color: '#fff'
+    background: error ? 'rgba(224,138,128,.10)' : focus ? 'rgba(255,255,255,.12)' : 'rgba(255,255,255,.08)',
+    border: '1px solid ' + (error ? '#E08A80' : focus ? 'var(--green-300)' : 'transparent'),
+    color: '#fff',
+    boxShadow: focus ? '0 0 0 3px rgba(145,188,145,.18)' : 'none'
   } : {
-    background: error ? 'rgba(178,80,70,.06)' : focus ? '#fff' : 'var(--surface-2)',
+    background: error ? 'rgba(182,83,44,.06)' : focus ? '#fff' : 'var(--surface-2)',
     border: '1px solid ' + (error ? 'var(--error)' : focus ? 'var(--khyzr-green)' : 'transparent'),
     color: 'var(--body)',
     boxShadow: focus ? '0 0 0 3px rgba(10,105,10,.14)' : 'none'
   };
   const field = {
-    ...base, width: '100%', boxSizing: 'border-box', borderRadius: 14, padding: '13px 16px',
+    ...base, width: '100%', boxSizing: 'border-box', borderRadius: 'var(--radius-m)', padding: '13px 16px',
     fontFamily: 'var(--font-text)', fontSize: 15, lineHeight: 1.45, outline: 'none',
     transition: 'background .2s ease, border-color .2s ease, box-shadow .2s ease', resize: 'vertical'
   };
@@ -98,9 +99,9 @@ function PlateField({ label, helper, error, textarea, onDark, placeholder, value
     onFocus: () => setFocus(true), onBlur: () => setFocus(false)
   });
   return React.createElement('label', { style: { display: 'flex', flexDirection: 'column', gap: 7, opacity: disabled ? .45 : 1, fontFamily: 'var(--font-text)' } },
-    label && React.createElement('span', { style: { fontSize: 13, fontWeight: 600, color: onDark ? '#EEF2EE' : 'var(--body)' } }, label),
+    label && React.createElement('span', { style: { fontSize: 13, fontWeight: 'var(--fw-ui)', color: onDark ? 'var(--on-dark-soft)' : 'var(--body)' } }, label),
     el,
-    (error || helper) && React.createElement('span', { style: { fontSize: 12.5, color: error ? (onDark ? '#E08A80' : 'var(--error)') : (onDark ? '#8D948F' : 'var(--faint)') } }, error || helper)
+    (error || helper) && React.createElement('span', { style: { fontSize: 12.5, color: error ? (onDark ? '#E08A80' : 'var(--error)') : (onDark ? 'var(--on-dark-muted)' : 'var(--faint)') } }, error || helper)
   );
 }
 ns.PlateField = PlateField;

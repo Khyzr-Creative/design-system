@@ -1,6 +1,6 @@
 /* ============================================================
    khyzr — motion tokens. ADOPTED 2026-07-14 (The Green Trace),
-   rev 07-15 (root-anchored rise, no blur). Mirrors chapter 09.
+   rev 07-15 (root-anchored rise, no blur). Rules: the design-system site's Motion page.
    Springs move TRANSFORMS only — color/opacity on standard ease.
    Entrances: rise 30px, scale .96→1 anchored 50% 100%, overlap.
    Nothing animates twice; reduced-motion = final states.

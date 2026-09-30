@@ -1,10 +1,10 @@
 /* ============================================================
-   Khyzr — official pattern asset  ·  <khyzr-pattern>
+   khyzr — official pattern asset  ·  <khyzr-pattern>
    STATUS: adopted 2026-07-13. Source of truth for the cutout
    pattern used on SECTIONS and ELEMENTS (never full pages).
 
-   This asset is the source of truth for production. To explore seeds, use the
-   generative bench: "Khyzr Pattern Lab.dc.html" (theme/seed/scale/drift).
+   This asset is the source of truth for production. Seeds, scales and themes in use
+   are listed on the design system's Pattern page.
    This asset is the production form: STATIC, deterministic,
    container-sized, one shared WebGL context for any number of
    instances (each instance receives a plain 2D copy).
@@ -24,7 +24,7 @@
      animate  present → slow ambient drift (CSS transform only —
             zero re-rendering; auto-off under prefers-reduced-motion)
 
-   Rules (see "Khyzr Pattern.dc.html"):
+   Rules (the design system's Pattern page, guidelines/pattern.md):
      · sections, cards, media slots, dividers — not page bg
      · dark: text-safe as-is · light: keep text ≥ #262D29
      · never recolor; themes only

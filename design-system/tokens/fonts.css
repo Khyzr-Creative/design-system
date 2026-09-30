@@ -1,10 +1,5 @@
-/* khyzr — webfonts. STATUS: PROVISIONAL.
-   Google-hosted for now; no local font files exist yet.
-   NOT loaded: Space Grotesk (was in the mockup's font link but is unused there —
-   only a stale comment references it; the hero canvas draws in Outfit).
-   AMENDED 2026-09-19 (Cisc): one family. Outfit carries display, text and UI; Manrope is
-   the technical register only (--font-tech), loaded at 400/500/600; JetBrains Mono is retired
-   and no longer loaded. Outfit 700/800 stay until the chapters stop asking for them.
-   PENDING: none. Display face LOCKED (2026-07-08): Outfit. TWK Everett was
-   considered but not licensed; adopting it later is a new decision. */
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Manrope:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=Noto+Naskh+Arabic:wght@400;600&display=swap");
+/* khyzr — webfonts, Google-hosted (install files for desktop apps ship in the employee Drive).
+   Outfit at the three role weights (600 display, 500 interface, 400 reading); Manrope, the
+   technical register, at 600 only; Instrument Serif italic; Noto Naskh Arabic.
+   Display face locked: Outfit. No monospace. */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=Manrope:wght@600&family=Instrument+Serif:ital@0;1&family=Noto+Naskh+Arabic:wght@400;600&display=swap");

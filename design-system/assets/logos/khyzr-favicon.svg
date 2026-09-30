@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160pt" height="160pt" viewBox="0 0 160 160" version="1.2">
-<title>Khyzr</title>
+<title>khyzr</title>
 <style>.tile{fill:#043304}.back{fill:#136E13}.mid{fill:#149314}.front{fill:#5CBA5C}@media (prefers-color-scheme:dark){.tile{fill:#FFFFFF}.back{fill:#149314}.mid{fill:#136E13}.front{fill:#0C4A0C}}</style>
 <g id="surface1">
 <path class="tile" style=" stroke:none;fill-rule:nonzero;fill-opacity:1;" d="M 117.535156 160 L 42.464844 160 C 19.109375 160 0 140.890625 0 117.535156 L 0 42.464844 C 0 19.109375 19.109375 0 42.464844 0 L 117.535156 0 C 140.890625 0 160 19.109375 160 42.464844 L 160 117.535156 C 160 140.890625 140.890625 160 117.535156 160 "></path>

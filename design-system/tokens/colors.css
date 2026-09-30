@@ -1,10 +1,10 @@
 /* ============================================================
    khyzr — color tokens
-   STATUS: ADOPTED 2026-08-08 — "Verdant standard" (lab sheet 21 — labs retired, backed up).
+   STATUS: ADOPTED 2026-08-08 — the "Verdant standard".
    The supplied dark green leads everything; cobalt / marigold /
    terracotta / steel are the working secondaries. The greens scale
    is rebuilt around the supplied primary (pure 120° hue) — tints
-   read sage now, not mint. Labs retired 2026-08-08; previous palette lives in the external backup.
+   read sage now, not mint.
    ============================================================ */
 :root{
   /* ---- brand core (Verdant standard) ---- */
@@ -34,7 +34,7 @@
   --steel:#6E7B8A;           /* wash · quiet data (4.3:1) */
   --steel-text:#677482;      /* AA twin — steel as copy */
 
-  /* ---- neutrals (green-cast) ---- */
+  /* ---- neutrals ---- */
   --paper:#FFFFFF;         /* page canvas — white (Cisc, 2026-09-29; was the supplied light green #F7FFF7) */
   --surface:#FFFFFF;       /* cards */
   --surface-2:#F5F5F5;     /* alt sections — neutral since 2026-09-29 (was #F0F7F0) */
@@ -70,7 +70,7 @@
   --error:var(--terracotta-text);     /* terracotta family — replaces proposed #B25046 */
   --selection:rgba(10,105,10,.16);
 
-  /* ---- data-viz roles — RECUT 2026-08-08 (chapter 12: Khyzr Data.dc.html) ---- */
+  /* ---- data-viz roles — recut 2026-08-08 (the design-system site's Data page) ---- */
   --viz-lead:var(--green-500);      /* series 1, always green */
   --viz-lead-deep:var(--green-700); /* line strokes, endpoint dots */
   --viz-2:var(--cobalt);            /* second series — info blue */
