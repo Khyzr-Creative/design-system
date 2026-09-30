@@ -430,6 +430,9 @@ html.scheme-dark {
 .scheme-dark .prose a:not(.anchor) { text-decoration: underline; text-decoration-color: var(--pp-accent); text-underline-offset: 3px; }
 .scheme-dark .prose a:not(.anchor):hover { color: var(--pp-accent); }
 .scheme-dark .logo { background: var(--pp-ground); }
+/* a light ground stays light on a dark page: the specimen shows the mark where it will sit */
+.scheme-dark .logo.light .tile { background: #FFFFFF; }
+.scheme-dark .tab.light { color: #0A0A0A; border-color: #E7E7E7; }
 .scheme-dark .skip { background: var(--pp-text); color: var(--pp-ground); }
 .scheme-dark .foot { background: var(--pp-raised); border-top: 1px solid var(--pp-hair); }
 .scheme-dark .pp { box-shadow: inset 0 0 0 1px var(--pp-hair); }
