@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160pt" height="160pt" viewBox="0 0 160 160" version="1.2">
 <title>khyzr.studio</title>
-<style>.tile{fill:#3B2300}.back{fill:#CC3E66}.mid{fill:#F38239}.front{fill:#F7CD3A}@media (prefers-color-scheme:dark){.tile{fill:#FFFFFF}.back{fill:#F7CD3A}.mid{fill:#F8A732}.front{fill:#F38239}}</style>
+<style>.tile{fill:#3B2300}.back{fill:#CC3E66}.mid{fill:#F38239}.front{fill:#F7CD3A}</style>
 <g id="surface1">
 <path class="tile" style=" stroke:none;fill-rule:nonzero;fill-opacity:1;" d="M 117.535156 160 L 42.464844 160 C 19.109375 160 0 140.890625 0 117.535156 L 0 42.464844 C 0 19.109375 19.109375 0 42.464844 0 L 117.535156 0 C 140.890625 0 160 19.109375 160 42.464844 L 160 117.535156 C 160 140.890625 140.890625 160 117.535156 160 "></path>
 <path class="back" style=" stroke:none;fill-rule:nonzero;fill-opacity:1;" d="M 57.523438 57.523438 C 53.574219 61.472656 48.972656 64.574219 43.847656 66.742188 C 38.53125 68.992188 32.894531 70.132812 27.085938 70.132812 L 27.085938 57.804688 C 44.054688 57.804688 57.804688 44.054688 57.804688 27.085938 L 70.132812 27.085938 C 70.132812 32.894531 68.992188 38.53125 66.742188 43.847656 C 64.574219 48.972656 61.472656 53.574219 57.523438 57.523438 "></path>
