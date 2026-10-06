@@ -1,0 +1,5 @@
+/* khyzr: webfonts, Google-hosted.
+   Outfit at the three role weights (600 display, 500 interface, 400 reading); Manrope, the
+   technical register, at 600; Instrument Serif; Noto Naskh Arabic.
+   The display face is Outfit. There is no monospace. */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=Manrope:wght@600&family=Instrument+Serif:ital@0;1&family=Noto+Naskh+Arabic:wght@400;600&display=swap");

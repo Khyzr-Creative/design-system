@@ -1,0 +1,86 @@
+/* ============================================================
+   khyzr: color tokens
+   One green family leads. Cobalt, marigold, terracotta and steel are
+   the working secondaries. The greens scale is built around the
+   primary on one hue, so its tints read sage.
+   ============================================================ */
+:root{
+  /* ---- brand core ---- */
+  --khyzr-green:#0A690A;   /* the primary green · 6.9:1 on paper, safe for text as it stands */
+  --forest:#064606;        /* the deep green: hover, pressed, deep fills */
+  --deep-forest:#053805;   /* the deepest solid */
+  --mint:#85B485;          /* light sage */
+
+  /* ---- greens scale (one hue, 050 to 900) ---- */
+  --green-050:#EFF7EF;
+  --green-100:#DBE9DB;     /* pale mint · also a gradient stop */
+  --green-200:#A9CBA9;
+  --green-300:#91BC91;     /* green-bright: the accent on dark */
+  --green-400:#3B873B;
+  --green-500:#0A690A;     /* = khyzr green · 6.9:1 on paper */
+  --green-600:#085808;     /* pressed state on the primary */
+  --green-700:#064606;     /* = forest */
+  --green-800:#053805;     /* = deep forest */
+  --green-900:#043304;     /* the deep green of dark surfaces · gradient anchor */
+  --leaf:#2F802F;          /* bright leaf: a stop of the gradient, the hero orb's low tone, the mesh's light look · never text, never interface */
+
+  /* ---- secondaries ---- */
+  --cobalt:#2F5FB5;          /* info · 6.1:1 on paper, text-safe */
+  --marigold:#E8A93C;        /* highlight · graphics only (2.1:1) */
+  --marigold-text:#946C26;   /* AA twin: marigold as copy */
+  --terracotta:#C2582F;      /* signal · large text only (4.4:1) */
+  --terracotta-text:#B6532C; /* AA twin: signal as copy */
+  --steel:#6E7B8A;           /* wash · quiet data (4.3:1) */
+  --steel-text:#677482;      /* AA twin: steel as copy */
+
+  /* ---- neutrals ---- */
+  --paper:#FFFFFF;         /* page canvas */
+  --surface:#FFFFFF;       /* cards */
+  --surface-2:#F5F5F5;     /* sections set apart, resting cards, plates */
+  --hairline:#E7E7E7;      /* borders */
+  --hairline-strong:#CFCFCF; /* a hairline under the pointer: the border of a control on hover */
+  --faint:#8B938C;         /* rules and large type · never small text: 3.2:1 on white */
+  --muted:#5D665F;         /* secondary text · captions and labels (5.9:1 on white) */
+  --body:#262D29;          /* body text */
+  --ink:#0A0A0A;           /* headings · the workhorse black */
+  --pitch:#030503;         /* dark surfaces · gradient anchor · never a text color */
+
+  /* ---- on dark (text on ink, pitch and green-900 surfaces) ---- */
+  --on-dark-heading:#FFFFFF;
+  --on-dark-soft:#EEF2EE;            /* statement text, labels on dark */
+  --on-dark-body:#C8CEC9;            /* footer links, body */
+  --on-dark-muted:#8D948F;           /* secondary text */
+  --on-dark-faint:#7B827D;           /* labels and legal on ink and pitch (5:1) · on green-900 it falls to 3.6:1: large text only there */
+  --on-dark-accent:var(--green-300); /* the accent word */
+  --on-dark-divider:rgba(255,255,255,.10);
+  --on-dark-border:rgba(255,255,255,.11);
+
+  /* ---- interface roles ---- */
+  --bg:var(--paper);                  /* the page */
+  --fg-heading:var(--ink);            /* the color of a heading */
+  --fg-body:var(--body);              /* the color of reading text */
+  --link:var(--green-500);            /* a link in a document or on a reference page · the primary is text-safe */
+  --accent:var(--green-500);          /* the one green phrase, a dot, a rule */
+  --focus-ring:var(--green-500);      /* keyboard focus on light */
+  --focus-ring-on-dark:var(--on-dark-heading); /* keyboard focus on dark: white */
+  --info:var(--cobalt);               /* informational chips, links out, scheduled states */
+  --highlight:var(--marigold);        /* emphasis graphics, number accents */
+  --highlight-text:var(--marigold-text);
+  --success:var(--green-500);
+  --error:var(--terracotta-text);     /* feedback only, never in a chart */
+  --selection:rgba(10,105,10,.16);    /* behind selected text */
+
+  /* ---- data-viz roles ---- */
+  --viz-lead:var(--green-500);      /* series 1, always green */
+  --viz-lead-deep:var(--green-700); /* line strokes, endpoint dots */
+  --viz-2:var(--cobalt);            /* second series */
+  --viz-3:var(--steel);             /* third series, comparison ghosts */
+  --viz-4:#C4CBD1;                  /* steel tint: fourth series, remainders */
+  --signal:var(--terracotta);       /* flags, negatives, annotations only · never a series, never chrome */
+  --signal-text:var(--terracotta-text); /* terracotta for small text and on tints */
+  --signal-tint:#F8EBE6;            /* the wash behind a signal chip */
+
+  /* ---- brand gradient ---- */
+  --gradient-hero:linear-gradient(to bottom in oklab,#030503 0%,#043304 36%,#064606 58%,#2F802F 71%,#85B485 84%,#DBE9DB 93%,#FFFFFF 100%); /* pitch, green-900, forest, leaf, mint, green-100, paper */
+  --gradient-hero-srgb:linear-gradient(to bottom,#030503 0%,#043304 36%,#064606 58%,#2F802F 71%,#85B485 84%,#DBE9DB 93%,#FFFFFF 100%); /* the same ramp for a renderer without OKLab */
+}

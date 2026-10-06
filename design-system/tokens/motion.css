@@ -1,0 +1,26 @@
+/* ============================================================
+   khyzr: motion tokens. The Green Trace: things grow in.
+   Springs move transforms only; color and opacity change on the standard ease.
+   Entrances rise 30px and scale from .96 to 1, anchored at the baseline, and overlap.
+   Nothing animates twice. Reduced motion shows final states.
+   ============================================================ */
+:root{
+  /* ---- curves ---- */
+  --ease-trace:cubic-bezier(.34,1.45,.64,1);  /* entrances */
+  --ease-pop:cubic-bezier(.34,1.56,.64,1);    /* hovers, pulses */
+  --ease-drift:cubic-bezier(.22,.9,.36,1);    /* growing bars, widths and rules; a card's lift */
+  --ease-standard:ease;                       /* color, background, border and opacity */
+
+  /* ---- clocks ---- */
+  --dur-enter:900ms;     /* entrances */
+  --dur-stagger:140ms;   /* the step between entrances, overlapping */
+  --dur-hover:500ms;     /* hovers */
+  --dur-pulse:420ms;     /* the settle pulse */
+  --dur-count:1600ms;    /* count-ups */
+  --dur-color:200ms;     /* a color, a border or a ground answering the pointer, on the standard ease */
+  --dur-surface:350ms;   /* a surface changing state, on the standard ease: the navigation's flip */
+
+  /* ---- distances ---- */
+  --rise-distance:30px;  /* how far an entrance rises */
+  --rise-scale:.96;      /* the scale an entrance grows from */
+}

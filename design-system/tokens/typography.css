@@ -1,0 +1,41 @@
+/* ============================================================
+   khyzr: type tokens
+   One family. Outfit carries display, text and interface at three weights by role:
+   --fw-display 600, --fw-ui 500, --fw-text 400. Never by eye, never 700.
+   Manrope is the technical register only (--font-tech): eyebrows, labels, indices,
+   footer headings, 11 to 13px, uppercase, tracked. There is no monospace.
+   Instrument Serif italic: a rare editorial accent, at most once per page.
+   Noto Naskh Arabic: the name in Arabic only.
+   ============================================================ */
+:root{
+  /* ---- families ---- */
+  --font-display:"Outfit",system-ui,sans-serif;
+  --font-text:"Outfit",system-ui,sans-serif;
+  --font-tech:"Manrope",system-ui,sans-serif;   /* small technical text only, 11 to 13px */
+  --font-serif-accent:"Instrument Serif",Georgia,serif;
+  --font-arabic:"Noto Naskh Arabic","Times New Roman",serif;
+
+  /* ---- weights, by role ---- */
+  --fw-display:600;   /* display */
+  --fw-ui:500;        /* interface, and a name inside a card or a list */
+  --fw-text:400;      /* reading */
+
+  /* ---- sizes ---- */
+  --text-hero-word:clamp(54px,12.5vw,210px);   /* the uppercase hero word: display, fw-display, -0.02em */
+  --text-title:clamp(2.1rem,4.6vw,3.7rem);     /* display, fw-display, tracking-display, leading-title */
+  --text-quote:clamp(1.65rem,3.5vw,2.9rem);    /* display, fw-display, -0.022em */
+  --text-lede:clamp(1.06rem,1.5vw,1.32rem);    /* text, fw-text, leading-lede */
+  --text-body:16px;                            /* text, fw-text, leading-body */
+  --text-eyebrow:12px;                         /* tech (Manrope 600), tracking-eyebrow, uppercase */
+  --text-label:11px;                           /* tech (Manrope 600), tracking-label, uppercase */
+
+  /* ---- line height ---- */
+  --leading-title:1.02;   /* a title */
+  --leading-lede:1.5;     /* a lede */
+  --leading-body:1.55;    /* reading text */
+
+  /* ---- tracking ---- */
+  --tracking-display:-0.027em;   /* titles */
+  --tracking-eyebrow:.16em;      /* eyebrows, captions in the technical register */
+  --tracking-label:.10em;        /* labels in the technical register */
+}

@@ -1,0 +1,1323 @@
+{
+  "about": "khyzr's design tokens.",
+  "count": 122,
+  "tokens": [
+    {
+      "name": "khyzr-green",
+      "css": "--khyzr-green",
+      "file": "colors.css",
+      "group": "brand core",
+      "type": "color",
+      "value": "#0A690A",
+      "hex": "#0A690A",
+      "plainName": "khyzr Green",
+      "colorData": true,
+      "note": "the primary green · 6.9:1 on paper, safe for text as it stands"
+    },
+    {
+      "name": "forest",
+      "css": "--forest",
+      "file": "colors.css",
+      "group": "brand core",
+      "type": "color",
+      "value": "#064606",
+      "hex": "#064606",
+      "plainName": "Forest",
+      "colorData": true,
+      "note": "the deep green: hover, pressed, deep fills"
+    },
+    {
+      "name": "deep-forest",
+      "css": "--deep-forest",
+      "file": "colors.css",
+      "group": "brand core",
+      "type": "color",
+      "value": "#053805",
+      "hex": "#053805",
+      "plainName": "Deep Forest",
+      "colorData": true,
+      "note": "the deepest solid"
+    },
+    {
+      "name": "mint",
+      "css": "--mint",
+      "file": "colors.css",
+      "group": "brand core",
+      "type": "color",
+      "value": "#85B485",
+      "hex": "#85B485",
+      "plainName": "Mint",
+      "colorData": true,
+      "note": "light sage"
+    },
+    {
+      "name": "green-050",
+      "css": "--green-050",
+      "file": "colors.css",
+      "group": "greens scale",
+      "type": "color",
+      "value": "#EFF7EF",
+      "hex": "#EFF7EF",
+      "plainName": "Green 050",
+      "colorData": true
+    },
+    {
+      "name": "green-100",
+      "css": "--green-100",
+      "file": "colors.css",
+      "group": "greens scale",
+      "type": "color",
+      "value": "#DBE9DB",
+      "hex": "#DBE9DB",
+      "plainName": "Pale Mint",
+      "colorData": true,
+      "note": "pale mint · also a gradient stop"
+    },
+    {
+      "name": "green-200",
+      "css": "--green-200",
+      "file": "colors.css",
+      "group": "greens scale",
+      "type": "color",
+      "value": "#A9CBA9",
+      "hex": "#A9CBA9",
+      "plainName": "Green 200",
+      "colorData": true
+    },
+    {
+      "name": "green-300",
+      "css": "--green-300",
+      "file": "colors.css",
+      "group": "greens scale",
+      "type": "color",
+      "value": "#91BC91",
+      "hex": "#91BC91",
+      "plainName": "Light green",
+      "colorData": true,
+      "note": "green-bright: the accent on dark"
+    },
+    {
+      "name": "green-400",
+      "css": "--green-400",
+      "file": "colors.css",
+      "group": "greens scale",
+      "type": "color",
+      "value": "#3B873B",
+      "hex": "#3B873B",
+      "plainName": "Green 400",
+      "colorData": true
+    },
+    {
+      "name": "green-500",
+      "css": "--green-500",
+      "file": "colors.css",
+      "group": "greens scale",
+      "type": "color",
+      "value": "#0A690A",
+      "hex": "#0A690A",
+      "plainName": "Green 500",
+      "colorData": true,
+      "note": "= khyzr green · 6.9:1 on paper"
+    },
+    {
+      "name": "green-600",
+      "css": "--green-600",
+      "file": "colors.css",
+      "group": "greens scale",
+      "type": "color",
+      "value": "#085808",
+      "hex": "#085808",
+      "plainName": "Green 600",
+      "colorData": true,
+      "note": "pressed state on the primary"
+    },
+    {
+      "name": "green-700",
+      "css": "--green-700",
+      "file": "colors.css",
+      "group": "greens scale",
+      "type": "color",
+      "value": "#064606",
+      "hex": "#064606",
+      "plainName": "Green 700",
+      "colorData": true,
+      "note": "= forest"
+    },
+    {
+      "name": "green-800",
+      "css": "--green-800",
+      "file": "colors.css",
+      "group": "greens scale",
+      "type": "color",
+      "value": "#053805",
+      "hex": "#053805",
+      "plainName": "Green 800",
+      "colorData": true,
+      "note": "= deep forest"
+    },
+    {
+      "name": "green-900",
+      "css": "--green-900",
+      "file": "colors.css",
+      "group": "greens scale",
+      "type": "color",
+      "value": "#043304",
+      "hex": "#043304",
+      "plainName": "Deep green",
+      "colorData": true,
+      "note": "the deep green of dark surfaces · gradient anchor"
+    },
+    {
+      "name": "leaf",
+      "css": "--leaf",
+      "file": "colors.css",
+      "group": "greens scale",
+      "type": "color",
+      "value": "#2F802F",
+      "hex": "#2F802F",
+      "plainName": "Bright leaf",
+      "colorData": true,
+      "note": "bright leaf: a stop of the gradient, the hero orb's low tone, the mesh's light look · never text, never interface"
+    },
+    {
+      "name": "cobalt",
+      "css": "--cobalt",
+      "file": "colors.css",
+      "group": "secondaries",
+      "type": "color",
+      "value": "#2F5FB5",
+      "hex": "#2F5FB5",
+      "plainName": "Cobalt",
+      "colorData": true,
+      "note": "info · 6.1:1 on paper, text-safe"
+    },
+    {
+      "name": "marigold",
+      "css": "--marigold",
+      "file": "colors.css",
+      "group": "secondaries",
+      "type": "color",
+      "value": "#E8A93C",
+      "hex": "#E8A93C",
+      "plainName": "Marigold",
+      "colorData": true,
+      "note": "highlight · graphics only (2.1:1)"
+    },
+    {
+      "name": "marigold-text",
+      "css": "--marigold-text",
+      "file": "colors.css",
+      "group": "secondaries",
+      "type": "color",
+      "value": "#946C26",
+      "hex": "#946C26",
+      "plainName": "Marigold text",
+      "colorData": true,
+      "note": "AA twin: marigold as copy"
+    },
+    {
+      "name": "terracotta",
+      "css": "--terracotta",
+      "file": "colors.css",
+      "group": "secondaries",
+      "type": "color",
+      "value": "#C2582F",
+      "hex": "#C2582F",
+      "plainName": "Terracotta",
+      "colorData": true,
+      "note": "signal · large text only (4.4:1)"
+    },
+    {
+      "name": "terracotta-text",
+      "css": "--terracotta-text",
+      "file": "colors.css",
+      "group": "secondaries",
+      "type": "color",
+      "value": "#B6532C",
+      "hex": "#B6532C",
+      "plainName": "Terracotta text",
+      "colorData": true,
+      "note": "AA twin: signal as copy"
+    },
+    {
+      "name": "steel",
+      "css": "--steel",
+      "file": "colors.css",
+      "group": "secondaries",
+      "type": "color",
+      "value": "#6E7B8A",
+      "hex": "#6E7B8A",
+      "plainName": "Steel",
+      "colorData": true,
+      "note": "wash · quiet data (4.3:1)"
+    },
+    {
+      "name": "steel-text",
+      "css": "--steel-text",
+      "file": "colors.css",
+      "group": "secondaries",
+      "type": "color",
+      "value": "#677482",
+      "hex": "#677482",
+      "plainName": "Steel text",
+      "colorData": true,
+      "note": "AA twin: steel as copy"
+    },
+    {
+      "name": "paper",
+      "css": "--paper",
+      "file": "colors.css",
+      "group": "neutrals",
+      "type": "color",
+      "value": "#FFFFFF",
+      "hex": "#FFFFFF",
+      "plainName": "Paper",
+      "colorData": true,
+      "note": "page canvas"
+    },
+    {
+      "name": "surface",
+      "css": "--surface",
+      "file": "colors.css",
+      "group": "neutrals",
+      "type": "color",
+      "value": "#FFFFFF",
+      "hex": "#FFFFFF",
+      "plainName": "Paper",
+      "note": "cards"
+    },
+    {
+      "name": "surface-2",
+      "css": "--surface-2",
+      "file": "colors.css",
+      "group": "neutrals",
+      "type": "color",
+      "value": "#F5F5F5",
+      "hex": "#F5F5F5",
+      "plainName": "Light gray",
+      "colorData": true,
+      "note": "sections set apart, resting cards, plates"
+    },
+    {
+      "name": "hairline",
+      "css": "--hairline",
+      "file": "colors.css",
+      "group": "neutrals",
+      "type": "color",
+      "value": "#E7E7E7",
+      "hex": "#E7E7E7",
+      "plainName": "Hairline",
+      "colorData": true,
+      "note": "borders"
+    },
+    {
+      "name": "hairline-strong",
+      "css": "--hairline-strong",
+      "file": "colors.css",
+      "group": "neutrals",
+      "type": "color",
+      "value": "#CFCFCF",
+      "hex": "#CFCFCF",
+      "note": "a hairline under the pointer: the border of a control on hover"
+    },
+    {
+      "name": "faint",
+      "css": "--faint",
+      "file": "colors.css",
+      "group": "neutrals",
+      "type": "color",
+      "value": "#8B938C",
+      "hex": "#8B938C",
+      "plainName": "Faint",
+      "colorData": true,
+      "note": "rules and large type · never small text: 3.2:1 on white"
+    },
+    {
+      "name": "muted",
+      "css": "--muted",
+      "file": "colors.css",
+      "group": "neutrals",
+      "type": "color",
+      "value": "#5D665F",
+      "hex": "#5D665F",
+      "plainName": "Muted",
+      "colorData": true,
+      "note": "secondary text · captions and labels (5.9:1 on white)"
+    },
+    {
+      "name": "body",
+      "css": "--body",
+      "file": "colors.css",
+      "group": "neutrals",
+      "type": "color",
+      "value": "#262D29",
+      "hex": "#262D29",
+      "plainName": "Body",
+      "colorData": true,
+      "note": "body text"
+    },
+    {
+      "name": "ink",
+      "css": "--ink",
+      "file": "colors.css",
+      "group": "neutrals",
+      "type": "color",
+      "value": "#0A0A0A",
+      "hex": "#0A0A0A",
+      "plainName": "Ink",
+      "colorData": true,
+      "note": "headings · the workhorse black"
+    },
+    {
+      "name": "pitch",
+      "css": "--pitch",
+      "file": "colors.css",
+      "group": "neutrals",
+      "type": "color",
+      "value": "#030503",
+      "hex": "#030503",
+      "plainName": "Pitch",
+      "colorData": true,
+      "note": "dark surfaces · gradient anchor · never a text color"
+    },
+    {
+      "name": "on-dark-heading",
+      "css": "--on-dark-heading",
+      "file": "colors.css",
+      "group": "on dark",
+      "type": "color",
+      "value": "#FFFFFF",
+      "hex": "#FFFFFF",
+      "plainName": "Paper"
+    },
+    {
+      "name": "on-dark-soft",
+      "css": "--on-dark-soft",
+      "file": "colors.css",
+      "group": "on dark",
+      "type": "color",
+      "value": "#EEF2EE",
+      "hex": "#EEF2EE",
+      "note": "statement text, labels on dark"
+    },
+    {
+      "name": "on-dark-body",
+      "css": "--on-dark-body",
+      "file": "colors.css",
+      "group": "on dark",
+      "type": "color",
+      "value": "#C8CEC9",
+      "hex": "#C8CEC9",
+      "note": "footer links, body"
+    },
+    {
+      "name": "on-dark-muted",
+      "css": "--on-dark-muted",
+      "file": "colors.css",
+      "group": "on dark",
+      "type": "color",
+      "value": "#8D948F",
+      "hex": "#8D948F",
+      "note": "secondary text"
+    },
+    {
+      "name": "on-dark-faint",
+      "css": "--on-dark-faint",
+      "file": "colors.css",
+      "group": "on dark",
+      "type": "color",
+      "value": "#7B827D",
+      "hex": "#7B827D",
+      "note": "labels and legal on ink and pitch (5:1) · on green-900 it falls to 3.6:1: large text only there"
+    },
+    {
+      "name": "on-dark-accent",
+      "css": "--on-dark-accent",
+      "file": "colors.css",
+      "group": "on dark",
+      "type": "color",
+      "value": "#91BC91",
+      "alias": "green-300",
+      "hex": "#91BC91",
+      "plainName": "Light green",
+      "note": "the accent word"
+    },
+    {
+      "name": "on-dark-divider",
+      "css": "--on-dark-divider",
+      "file": "colors.css",
+      "group": "on dark",
+      "type": "color",
+      "value": "rgba(255,255,255,.10)",
+      "hex": "#FFFFFF",
+      "alpha": 0.1
+    },
+    {
+      "name": "on-dark-border",
+      "css": "--on-dark-border",
+      "file": "colors.css",
+      "group": "on dark",
+      "type": "color",
+      "value": "rgba(255,255,255,.11)",
+      "hex": "#FFFFFF",
+      "alpha": 0.11
+    },
+    {
+      "name": "bg",
+      "css": "--bg",
+      "file": "colors.css",
+      "group": "interface roles",
+      "type": "color",
+      "value": "#FFFFFF",
+      "alias": "paper",
+      "hex": "#FFFFFF",
+      "plainName": "Paper",
+      "note": "the page"
+    },
+    {
+      "name": "fg-heading",
+      "css": "--fg-heading",
+      "file": "colors.css",
+      "group": "interface roles",
+      "type": "color",
+      "value": "#0A0A0A",
+      "alias": "ink",
+      "hex": "#0A0A0A",
+      "plainName": "Ink",
+      "note": "the color of a heading"
+    },
+    {
+      "name": "fg-body",
+      "css": "--fg-body",
+      "file": "colors.css",
+      "group": "interface roles",
+      "type": "color",
+      "value": "#262D29",
+      "alias": "body",
+      "hex": "#262D29",
+      "plainName": "Body",
+      "note": "the color of reading text"
+    },
+    {
+      "name": "link",
+      "css": "--link",
+      "file": "colors.css",
+      "group": "interface roles",
+      "type": "color",
+      "value": "#0A690A",
+      "alias": "green-500",
+      "hex": "#0A690A",
+      "plainName": "khyzr Green",
+      "note": "a link in a document or on a reference page · the primary is text-safe"
+    },
+    {
+      "name": "accent",
+      "css": "--accent",
+      "file": "colors.css",
+      "group": "interface roles",
+      "type": "color",
+      "value": "#0A690A",
+      "alias": "green-500",
+      "hex": "#0A690A",
+      "plainName": "khyzr Green",
+      "note": "the one green phrase, a dot, a rule"
+    },
+    {
+      "name": "focus-ring",
+      "css": "--focus-ring",
+      "file": "colors.css",
+      "group": "interface roles",
+      "type": "color",
+      "value": "#0A690A",
+      "alias": "green-500",
+      "hex": "#0A690A",
+      "plainName": "khyzr Green",
+      "note": "keyboard focus on light"
+    },
+    {
+      "name": "focus-ring-on-dark",
+      "css": "--focus-ring-on-dark",
+      "file": "colors.css",
+      "group": "interface roles",
+      "type": "color",
+      "value": "#FFFFFF",
+      "alias": "on-dark-heading",
+      "hex": "#FFFFFF",
+      "plainName": "Paper",
+      "note": "keyboard focus on dark: white"
+    },
+    {
+      "name": "info",
+      "css": "--info",
+      "file": "colors.css",
+      "group": "interface roles",
+      "type": "color",
+      "value": "#2F5FB5",
+      "alias": "cobalt",
+      "hex": "#2F5FB5",
+      "plainName": "Cobalt",
+      "note": "informational chips, links out, scheduled states"
+    },
+    {
+      "name": "highlight",
+      "css": "--highlight",
+      "file": "colors.css",
+      "group": "interface roles",
+      "type": "color",
+      "value": "#E8A93C",
+      "alias": "marigold",
+      "hex": "#E8A93C",
+      "plainName": "Marigold",
+      "note": "emphasis graphics, number accents"
+    },
+    {
+      "name": "highlight-text",
+      "css": "--highlight-text",
+      "file": "colors.css",
+      "group": "interface roles",
+      "type": "color",
+      "value": "#946C26",
+      "alias": "marigold-text",
+      "hex": "#946C26",
+      "plainName": "Marigold text"
+    },
+    {
+      "name": "success",
+      "css": "--success",
+      "file": "colors.css",
+      "group": "interface roles",
+      "type": "color",
+      "value": "#0A690A",
+      "alias": "green-500",
+      "hex": "#0A690A",
+      "plainName": "khyzr Green"
+    },
+    {
+      "name": "error",
+      "css": "--error",
+      "file": "colors.css",
+      "group": "interface roles",
+      "type": "color",
+      "value": "#B6532C",
+      "alias": "terracotta-text",
+      "hex": "#B6532C",
+      "plainName": "Terracotta text",
+      "note": "feedback only, never in a chart"
+    },
+    {
+      "name": "selection",
+      "css": "--selection",
+      "file": "colors.css",
+      "group": "interface roles",
+      "type": "color",
+      "value": "rgba(10,105,10,.16)",
+      "hex": "#0A690A",
+      "alpha": 0.16,
+      "note": "behind selected text"
+    },
+    {
+      "name": "viz-lead",
+      "css": "--viz-lead",
+      "file": "colors.css",
+      "group": "data-viz roles",
+      "type": "color",
+      "value": "#0A690A",
+      "alias": "green-500",
+      "hex": "#0A690A",
+      "plainName": "khyzr Green",
+      "note": "series 1, always green"
+    },
+    {
+      "name": "viz-lead-deep",
+      "css": "--viz-lead-deep",
+      "file": "colors.css",
+      "group": "data-viz roles",
+      "type": "color",
+      "value": "#064606",
+      "alias": "green-700",
+      "hex": "#064606",
+      "plainName": "Forest",
+      "note": "line strokes, endpoint dots"
+    },
+    {
+      "name": "viz-2",
+      "css": "--viz-2",
+      "file": "colors.css",
+      "group": "data-viz roles",
+      "type": "color",
+      "value": "#2F5FB5",
+      "alias": "cobalt",
+      "hex": "#2F5FB5",
+      "plainName": "Cobalt",
+      "note": "second series"
+    },
+    {
+      "name": "viz-3",
+      "css": "--viz-3",
+      "file": "colors.css",
+      "group": "data-viz roles",
+      "type": "color",
+      "value": "#6E7B8A",
+      "alias": "steel",
+      "hex": "#6E7B8A",
+      "plainName": "Steel",
+      "note": "third series, comparison ghosts"
+    },
+    {
+      "name": "viz-4",
+      "css": "--viz-4",
+      "file": "colors.css",
+      "group": "data-viz roles",
+      "type": "color",
+      "value": "#C4CBD1",
+      "hex": "#C4CBD1",
+      "plainName": "Steel tint",
+      "colorData": true,
+      "note": "steel tint: fourth series, remainders"
+    },
+    {
+      "name": "signal",
+      "css": "--signal",
+      "file": "colors.css",
+      "group": "data-viz roles",
+      "type": "color",
+      "value": "#C2582F",
+      "alias": "terracotta",
+      "hex": "#C2582F",
+      "plainName": "Terracotta",
+      "note": "flags, negatives, annotations only · never a series, never chrome"
+    },
+    {
+      "name": "signal-text",
+      "css": "--signal-text",
+      "file": "colors.css",
+      "group": "data-viz roles",
+      "type": "color",
+      "value": "#B6532C",
+      "alias": "terracotta-text",
+      "hex": "#B6532C",
+      "plainName": "Terracotta text",
+      "note": "terracotta for small text and on tints"
+    },
+    {
+      "name": "signal-tint",
+      "css": "--signal-tint",
+      "file": "colors.css",
+      "group": "data-viz roles",
+      "type": "color",
+      "value": "#F8EBE6",
+      "hex": "#F8EBE6",
+      "plainName": "Signal tint",
+      "colorData": true,
+      "note": "the wash behind a signal chip"
+    },
+    {
+      "name": "gradient-hero",
+      "css": "--gradient-hero",
+      "file": "colors.css",
+      "group": "brand gradient",
+      "type": "gradient",
+      "value": "linear-gradient(to bottom in oklab,#030503 0%,#043304 36%,#064606 58%,#2F802F 71%,#85B485 84%,#DBE9DB 93%,#FFFFFF 100%)",
+      "note": "pitch, green-900, forest, leaf, mint, green-100, paper"
+    },
+    {
+      "name": "gradient-hero-srgb",
+      "css": "--gradient-hero-srgb",
+      "file": "colors.css",
+      "group": "brand gradient",
+      "type": "gradient",
+      "value": "linear-gradient(to bottom,#030503 0%,#043304 36%,#064606 58%,#2F802F 71%,#85B485 84%,#DBE9DB 93%,#FFFFFF 100%)",
+      "note": "the same ramp for a renderer without OKLab"
+    },
+    {
+      "name": "font-display",
+      "css": "--font-display",
+      "file": "typography.css",
+      "group": "families",
+      "type": "fontFamily",
+      "value": "\"Outfit\",system-ui,sans-serif",
+      "parsed": [
+        "Outfit",
+        "system-ui",
+        "sans-serif"
+      ]
+    },
+    {
+      "name": "font-text",
+      "css": "--font-text",
+      "file": "typography.css",
+      "group": "families",
+      "type": "fontFamily",
+      "value": "\"Outfit\",system-ui,sans-serif",
+      "parsed": [
+        "Outfit",
+        "system-ui",
+        "sans-serif"
+      ]
+    },
+    {
+      "name": "font-tech",
+      "css": "--font-tech",
+      "file": "typography.css",
+      "group": "families",
+      "type": "fontFamily",
+      "value": "\"Manrope\",system-ui,sans-serif",
+      "parsed": [
+        "Manrope",
+        "system-ui",
+        "sans-serif"
+      ],
+      "note": "small technical text only, 11 to 13px"
+    },
+    {
+      "name": "font-serif-accent",
+      "css": "--font-serif-accent",
+      "file": "typography.css",
+      "group": "families",
+      "type": "fontFamily",
+      "value": "\"Instrument Serif\",Georgia,serif",
+      "parsed": [
+        "Instrument Serif",
+        "Georgia",
+        "serif"
+      ]
+    },
+    {
+      "name": "font-arabic",
+      "css": "--font-arabic",
+      "file": "typography.css",
+      "group": "families",
+      "type": "fontFamily",
+      "value": "\"Noto Naskh Arabic\",\"Times New Roman\",serif",
+      "parsed": [
+        "Noto Naskh Arabic",
+        "Times New Roman",
+        "serif"
+      ]
+    },
+    {
+      "name": "fw-display",
+      "css": "--fw-display",
+      "file": "typography.css",
+      "group": "weights, by role",
+      "type": "fontWeight",
+      "value": "600",
+      "parsed": 600,
+      "note": "display"
+    },
+    {
+      "name": "fw-ui",
+      "css": "--fw-ui",
+      "file": "typography.css",
+      "group": "weights, by role",
+      "type": "fontWeight",
+      "value": "500",
+      "parsed": 500,
+      "note": "interface, and a name inside a card or a list"
+    },
+    {
+      "name": "fw-text",
+      "css": "--fw-text",
+      "file": "typography.css",
+      "group": "weights, by role",
+      "type": "fontWeight",
+      "value": "400",
+      "parsed": 400,
+      "note": "reading"
+    },
+    {
+      "name": "text-hero-word",
+      "css": "--text-hero-word",
+      "file": "typography.css",
+      "group": "sizes",
+      "type": "fluid",
+      "value": "clamp(54px,12.5vw,210px)",
+      "min": "54px",
+      "max": "210px",
+      "note": "the uppercase hero word: display, fw-display, -0.02em"
+    },
+    {
+      "name": "text-title",
+      "css": "--text-title",
+      "file": "typography.css",
+      "group": "sizes",
+      "type": "fluid",
+      "value": "clamp(2.1rem,4.6vw,3.7rem)",
+      "min": "2.1rem",
+      "max": "3.7rem",
+      "note": "display, fw-display, tracking-display, leading-title"
+    },
+    {
+      "name": "text-quote",
+      "css": "--text-quote",
+      "file": "typography.css",
+      "group": "sizes",
+      "type": "fluid",
+      "value": "clamp(1.65rem,3.5vw,2.9rem)",
+      "min": "1.65rem",
+      "max": "2.9rem",
+      "note": "display, fw-display, -0.022em"
+    },
+    {
+      "name": "text-lede",
+      "css": "--text-lede",
+      "file": "typography.css",
+      "group": "sizes",
+      "type": "fluid",
+      "value": "clamp(1.06rem,1.5vw,1.32rem)",
+      "min": "1.06rem",
+      "max": "1.32rem",
+      "note": "text, fw-text, leading-lede"
+    },
+    {
+      "name": "text-body",
+      "css": "--text-body",
+      "file": "typography.css",
+      "group": "sizes",
+      "type": "dimension",
+      "value": "16px",
+      "note": "text, fw-text, leading-body"
+    },
+    {
+      "name": "text-eyebrow",
+      "css": "--text-eyebrow",
+      "file": "typography.css",
+      "group": "sizes",
+      "type": "dimension",
+      "value": "12px",
+      "note": "tech (Manrope 600), tracking-eyebrow, uppercase"
+    },
+    {
+      "name": "text-label",
+      "css": "--text-label",
+      "file": "typography.css",
+      "group": "sizes",
+      "type": "dimension",
+      "value": "11px",
+      "note": "tech (Manrope 600), tracking-label, uppercase"
+    },
+    {
+      "name": "leading-title",
+      "css": "--leading-title",
+      "file": "typography.css",
+      "group": "line height",
+      "type": "number",
+      "value": "1.02",
+      "parsed": 1.02,
+      "note": "a title"
+    },
+    {
+      "name": "leading-lede",
+      "css": "--leading-lede",
+      "file": "typography.css",
+      "group": "line height",
+      "type": "number",
+      "value": "1.5",
+      "parsed": 1.5,
+      "note": "a lede"
+    },
+    {
+      "name": "leading-body",
+      "css": "--leading-body",
+      "file": "typography.css",
+      "group": "line height",
+      "type": "number",
+      "value": "1.55",
+      "parsed": 1.55,
+      "note": "reading text"
+    },
+    {
+      "name": "tracking-display",
+      "css": "--tracking-display",
+      "file": "typography.css",
+      "group": "tracking",
+      "type": "dimension",
+      "value": "-0.027em",
+      "note": "titles"
+    },
+    {
+      "name": "tracking-eyebrow",
+      "css": "--tracking-eyebrow",
+      "file": "typography.css",
+      "group": "tracking",
+      "type": "dimension",
+      "value": ".16em",
+      "note": "eyebrows, captions in the technical register"
+    },
+    {
+      "name": "tracking-label",
+      "css": "--tracking-label",
+      "file": "typography.css",
+      "group": "tracking",
+      "type": "dimension",
+      "value": ".10em",
+      "note": "labels in the technical register"
+    },
+    {
+      "name": "space-1",
+      "css": "--space-1",
+      "file": "spacing.css",
+      "group": "spacing scale",
+      "type": "dimension",
+      "value": "12px"
+    },
+    {
+      "name": "space-2",
+      "css": "--space-2",
+      "file": "spacing.css",
+      "group": "spacing scale",
+      "type": "dimension",
+      "value": "16px"
+    },
+    {
+      "name": "space-3",
+      "css": "--space-3",
+      "file": "spacing.css",
+      "group": "spacing scale",
+      "type": "dimension",
+      "value": "24px"
+    },
+    {
+      "name": "space-4",
+      "css": "--space-4",
+      "file": "spacing.css",
+      "group": "spacing scale",
+      "type": "dimension",
+      "value": "32px"
+    },
+    {
+      "name": "space-5",
+      "css": "--space-5",
+      "file": "spacing.css",
+      "group": "spacing scale",
+      "type": "dimension",
+      "value": "40px"
+    },
+    {
+      "name": "space-6",
+      "css": "--space-6",
+      "file": "spacing.css",
+      "group": "spacing scale",
+      "type": "dimension",
+      "value": "64px"
+    },
+    {
+      "name": "section-pad-y",
+      "css": "--section-pad-y",
+      "file": "spacing.css",
+      "group": "section rhythm and layout",
+      "type": "fluid",
+      "value": "clamp(88px,14vh,180px)",
+      "min": "88px",
+      "max": "180px",
+      "note": "between a section's content and a change of ground"
+    },
+    {
+      "name": "gutter",
+      "css": "--gutter",
+      "file": "spacing.css",
+      "group": "section rhythm and layout",
+      "type": "fluid",
+      "value": "clamp(24px,5vw,96px)",
+      "min": "24px",
+      "max": "96px",
+      "note": "the page's side margin"
+    },
+    {
+      "name": "container",
+      "css": "--container",
+      "file": "spacing.css",
+      "group": "section rhythm and layout",
+      "type": "dimension",
+      "value": "1560px",
+      "note": "the column's cap; khyzr.com narrows it on a curve under 2560px wide"
+    },
+    {
+      "name": "measure-reading",
+      "css": "--measure-reading",
+      "file": "spacing.css",
+      "group": "section rhythm and layout",
+      "type": "dimension",
+      "value": "1180px",
+      "note": "the manifesto's measure"
+    },
+    {
+      "name": "measure-lede",
+      "css": "--measure-lede",
+      "file": "spacing.css",
+      "group": "section rhythm and layout",
+      "type": "dimension",
+      "value": "600px",
+      "note": "a lede's measure"
+    },
+    {
+      "name": "break-phone",
+      "css": "--break-phone",
+      "file": "spacing.css",
+      "group": "breakpoint",
+      "type": "dimension",
+      "value": "640px",
+      "note": "at and below, a layout takes its phone form · a media query cannot read a custom property, so the query types the value"
+    },
+    {
+      "name": "radius-s",
+      "css": "--radius-s",
+      "file": "spacing.css",
+      "group": "radii",
+      "type": "dimension",
+      "value": "9px",
+      "note": "small chips, a text link's focus shape"
+    },
+    {
+      "name": "radius-m",
+      "css": "--radius-m",
+      "file": "spacing.css",
+      "group": "radii",
+      "type": "dimension",
+      "value": "16px",
+      "note": "cards, icon tiles, form plates, code blocks"
+    },
+    {
+      "name": "radius-l",
+      "css": "--radius-l",
+      "file": "spacing.css",
+      "group": "radii",
+      "type": "dimension",
+      "value": "20px",
+      "note": "bands, grids, heroes, a photograph"
+    },
+    {
+      "name": "radius-pill",
+      "css": "--radius-pill",
+      "file": "spacing.css",
+      "group": "radii",
+      "type": "dimension",
+      "value": "999px",
+      "note": "all buttons, nav links, round controls"
+    },
+    {
+      "name": "focus-width",
+      "css": "--focus-width",
+      "file": "spacing.css",
+      "group": "keyboard focus",
+      "type": "dimension",
+      "value": "2px"
+    },
+    {
+      "name": "focus-offset",
+      "css": "--focus-offset",
+      "file": "spacing.css",
+      "group": "keyboard focus",
+      "type": "dimension",
+      "value": "3px"
+    },
+    {
+      "name": "shadow-lift",
+      "css": "--shadow-lift",
+      "file": "spacing.css",
+      "group": "shadows",
+      "type": "shadow",
+      "value": "0 24px 48px -30px rgba(5,56,5,.34)",
+      "note": "a card lifted on hover"
+    },
+    {
+      "name": "shadow-button",
+      "css": "--shadow-button",
+      "file": "spacing.css",
+      "group": "shadows",
+      "type": "shadow",
+      "value": "0 14px 30px -12px rgba(0,0,0,.55)",
+      "note": "the primary pill on hover"
+    },
+    {
+      "name": "shadow-float",
+      "css": "--shadow-float",
+      "file": "spacing.css",
+      "group": "shadows",
+      "type": "shadow",
+      "value": "0 1px 2px rgba(4,51,4,.05),0 30px 60px -34px rgba(4,51,4,.38)",
+      "note": "a sheet that floats at rest"
+    },
+    {
+      "name": "shadow-held",
+      "css": "--shadow-held",
+      "file": "spacing.css",
+      "group": "shadows",
+      "type": "shadow",
+      "value": "0 1px 2px rgba(4,51,4,.05),0 48px 80px -36px rgba(4,51,4,.5)",
+      "note": "the same sheet while it is held"
+    },
+    {
+      "name": "z-nav",
+      "css": "--z-nav",
+      "file": "spacing.css",
+      "group": "layers",
+      "type": "number",
+      "value": "60",
+      "parsed": 60,
+      "note": "the fixed navigation"
+    },
+    {
+      "name": "z-scrollbar",
+      "css": "--z-scrollbar",
+      "file": "spacing.css",
+      "group": "layers",
+      "type": "number",
+      "value": "70",
+      "parsed": 70,
+      "note": "a custom scrollbar, over the navigation"
+    },
+    {
+      "name": "z-skip",
+      "css": "--z-skip",
+      "file": "spacing.css",
+      "group": "layers",
+      "type": "number",
+      "value": "100",
+      "parsed": 100,
+      "note": "the skip link, over everything"
+    },
+    {
+      "name": "ease-trace",
+      "css": "--ease-trace",
+      "file": "motion.css",
+      "group": "curves",
+      "type": "cubicBezier",
+      "value": "cubic-bezier(.34,1.45,.64,1)",
+      "parsed": [
+        0.34,
+        1.45,
+        0.64,
+        1
+      ],
+      "note": "entrances"
+    },
+    {
+      "name": "ease-pop",
+      "css": "--ease-pop",
+      "file": "motion.css",
+      "group": "curves",
+      "type": "cubicBezier",
+      "value": "cubic-bezier(.34,1.56,.64,1)",
+      "parsed": [
+        0.34,
+        1.56,
+        0.64,
+        1
+      ],
+      "note": "hovers, pulses"
+    },
+    {
+      "name": "ease-drift",
+      "css": "--ease-drift",
+      "file": "motion.css",
+      "group": "curves",
+      "type": "cubicBezier",
+      "value": "cubic-bezier(.22,.9,.36,1)",
+      "parsed": [
+        0.22,
+        0.9,
+        0.36,
+        1
+      ],
+      "note": "growing bars, widths and rules; a card's lift"
+    },
+    {
+      "name": "ease-standard",
+      "css": "--ease-standard",
+      "file": "motion.css",
+      "group": "curves",
+      "type": "cubicBezier",
+      "value": "ease",
+      "parsed": [
+        0.25,
+        0.1,
+        0.25,
+        1
+      ],
+      "note": "color, background, border and opacity"
+    },
+    {
+      "name": "dur-enter",
+      "css": "--dur-enter",
+      "file": "motion.css",
+      "group": "clocks",
+      "type": "duration",
+      "value": "900ms",
+      "note": "entrances"
+    },
+    {
+      "name": "dur-stagger",
+      "css": "--dur-stagger",
+      "file": "motion.css",
+      "group": "clocks",
+      "type": "duration",
+      "value": "140ms",
+      "note": "the step between entrances, overlapping"
+    },
+    {
+      "name": "dur-hover",
+      "css": "--dur-hover",
+      "file": "motion.css",
+      "group": "clocks",
+      "type": "duration",
+      "value": "500ms",
+      "note": "hovers"
+    },
+    {
+      "name": "dur-pulse",
+      "css": "--dur-pulse",
+      "file": "motion.css",
+      "group": "clocks",
+      "type": "duration",
+      "value": "420ms",
+      "note": "the settle pulse"
+    },
+    {
+      "name": "dur-count",
+      "css": "--dur-count",
+      "file": "motion.css",
+      "group": "clocks",
+      "type": "duration",
+      "value": "1600ms",
+      "note": "count-ups"
+    },
+    {
+      "name": "dur-color",
+      "css": "--dur-color",
+      "file": "motion.css",
+      "group": "clocks",
+      "type": "duration",
+      "value": "200ms",
+      "note": "a color, a border or a ground answering the pointer, on the standard ease"
+    },
+    {
+      "name": "dur-surface",
+      "css": "--dur-surface",
+      "file": "motion.css",
+      "group": "clocks",
+      "type": "duration",
+      "value": "350ms",
+      "note": "a surface changing state, on the standard ease: the navigation's flip"
+    },
+    {
+      "name": "rise-distance",
+      "css": "--rise-distance",
+      "file": "motion.css",
+      "group": "distances",
+      "type": "dimension",
+      "value": "30px",
+      "note": "how far an entrance rises"
+    },
+    {
+      "name": "rise-scale",
+      "css": "--rise-scale",
+      "file": "motion.css",
+      "group": "distances",
+      "type": "number",
+      "value": ".96",
+      "parsed": 0.96,
+      "note": "the scale an entrance grows from"
+    }
+  ]
+}

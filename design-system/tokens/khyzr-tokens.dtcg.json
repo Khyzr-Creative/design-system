@@ -1,0 +1,2374 @@
+{
+  "$description": "khyzr's design tokens in the W3C Design Tokens format.",
+  "color": {
+    "brand-core": {
+      "khyzr-green": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.0392,
+            0.4118,
+            0.0392
+          ],
+          "alpha": 1,
+          "hex": "#0a690a"
+        },
+        "$description": "the primary green · 6.9:1 on paper, safe for text as it stands",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "#0A690A",
+            "property": "--khyzr-green",
+            "name": "khyzr Green"
+          }
+        }
+      },
+      "forest": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.0235,
+            0.2745,
+            0.0235
+          ],
+          "alpha": 1,
+          "hex": "#064606"
+        },
+        "$description": "the deep green: hover, pressed, deep fills",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "#064606",
+            "property": "--forest",
+            "name": "Forest"
+          }
+        }
+      },
+      "deep-forest": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.0196,
+            0.2196,
+            0.0196
+          ],
+          "alpha": 1,
+          "hex": "#053805"
+        },
+        "$description": "the deepest solid",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "#053805",
+            "property": "--deep-forest",
+            "name": "Deep Forest"
+          }
+        }
+      },
+      "mint": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.5216,
+            0.7059,
+            0.5216
+          ],
+          "alpha": 1,
+          "hex": "#85b485"
+        },
+        "$description": "light sage",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "#85B485",
+            "property": "--mint",
+            "name": "Mint"
+          }
+        }
+      }
+    },
+    "greens-scale": {
+      "green-050": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9373,
+            0.9686,
+            0.9373
+          ],
+          "alpha": 1,
+          "hex": "#eff7ef"
+        },
+        "$extensions": {
+          "com.khyzr": {
+            "css": "#EFF7EF",
+            "property": "--green-050",
+            "name": "Green 050"
+          }
+        }
+      },
+      "green-100": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.8588,
+            0.9137,
+            0.8588
+          ],
+          "alpha": 1,
+          "hex": "#dbe9db"
+        },
+        "$description": "pale mint · also a gradient stop",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "#DBE9DB",
+            "property": "--green-100",
+            "name": "Pale Mint"
+          }
+        }
+      },
+      "green-200": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.6627,
+            0.7961,
+            0.6627
+          ],
+          "alpha": 1,
+          "hex": "#a9cba9"
+        },
+        "$extensions": {
+          "com.khyzr": {
+            "css": "#A9CBA9",
+            "property": "--green-200",
+            "name": "Green 200"
+          }
+        }
+      },
+      "green-300": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.5686,
+            0.7373,
+            0.5686
+          ],
+          "alpha": 1,
+          "hex": "#91bc91"
+        },
+        "$description": "green-bright: the accent on dark",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "#91BC91",
+            "property": "--green-300",
+            "name": "Light green"
+          }
+        }
+      },
+      "green-400": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.2314,
+            0.5294,
+            0.2314
+          ],
+          "alpha": 1,
+          "hex": "#3b873b"
+        },
+        "$extensions": {
+          "com.khyzr": {
+            "css": "#3B873B",
+            "property": "--green-400",
+            "name": "Green 400"
+          }
+        }
+      },
+      "green-500": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.0392,
+            0.4118,
+            0.0392
+          ],
+          "alpha": 1,
+          "hex": "#0a690a"
+        },
+        "$description": "= khyzr green · 6.9:1 on paper",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "#0A690A",
+            "property": "--green-500",
+            "name": "Green 500"
+          }
+        }
+      },
+      "green-600": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.0314,
+            0.3451,
+            0.0314
+          ],
+          "alpha": 1,
+          "hex": "#085808"
+        },
+        "$description": "pressed state on the primary",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "#085808",
+            "property": "--green-600",
+            "name": "Green 600"
+          }
+        }
+      },
+      "green-700": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.0235,
+            0.2745,
+            0.0235
+          ],
+          "alpha": 1,
+          "hex": "#064606"
+        },
+        "$description": "= forest",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "#064606",
+            "property": "--green-700",
+            "name": "Green 700"
+          }
+        }
+      },
+      "green-800": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.0196,
+            0.2196,
+            0.0196
+          ],
+          "alpha": 1,
+          "hex": "#053805"
+        },
+        "$description": "= deep forest",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "#053805",
+            "property": "--green-800",
+            "name": "Green 800"
+          }
+        }
+      },
+      "green-900": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.0157,
+            0.2,
+            0.0157
+          ],
+          "alpha": 1,
+          "hex": "#043304"
+        },
+        "$description": "the deep green of dark surfaces · gradient anchor",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "#043304",
+            "property": "--green-900",
+            "name": "Deep green"
+          }
+        }
+      },
+      "leaf": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.1843,
+            0.502,
+            0.1843
+          ],
+          "alpha": 1,
+          "hex": "#2f802f"
+        },
+        "$description": "bright leaf: a stop of the gradient, the hero orb's low tone, the mesh's light look · never text, never interface",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "#2F802F",
+            "property": "--leaf",
+            "name": "Bright leaf"
+          }
+        }
+      }
+    },
+    "secondaries": {
+      "cobalt": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.1843,
+            0.3725,
+            0.7098
+          ],
+          "alpha": 1,
+          "hex": "#2f5fb5"
+        },
+        "$description": "info · 6.1:1 on paper, text-safe",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "#2F5FB5",
+            "property": "--cobalt",
+            "name": "Cobalt"
+          }
+        }
+      },
+      "marigold": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9098,
+            0.6627,
+            0.2353
+          ],
+          "alpha": 1,
+          "hex": "#e8a93c"
+        },
+        "$description": "highlight · graphics only (2.1:1)",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "#E8A93C",
+            "property": "--marigold",
+            "name": "Marigold"
+          }
+        }
+      },
+      "marigold-text": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.5804,
+            0.4235,
+            0.149
+          ],
+          "alpha": 1,
+          "hex": "#946c26"
+        },
+        "$description": "AA twin: marigold as copy",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "#946C26",
+            "property": "--marigold-text",
+            "name": "Marigold text"
+          }
+        }
+      },
+      "terracotta": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.7608,
+            0.3451,
+            0.1843
+          ],
+          "alpha": 1,
+          "hex": "#c2582f"
+        },
+        "$description": "signal · large text only (4.4:1)",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "#C2582F",
+            "property": "--terracotta",
+            "name": "Terracotta"
+          }
+        }
+      },
+      "terracotta-text": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.7137,
+            0.3255,
+            0.1725
+          ],
+          "alpha": 1,
+          "hex": "#b6532c"
+        },
+        "$description": "AA twin: signal as copy",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "#B6532C",
+            "property": "--terracotta-text",
+            "name": "Terracotta text"
+          }
+        }
+      },
+      "steel": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.4314,
+            0.4824,
+            0.5412
+          ],
+          "alpha": 1,
+          "hex": "#6e7b8a"
+        },
+        "$description": "wash · quiet data (4.3:1)",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "#6E7B8A",
+            "property": "--steel",
+            "name": "Steel"
+          }
+        }
+      },
+      "steel-text": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.4039,
+            0.4549,
+            0.5098
+          ],
+          "alpha": 1,
+          "hex": "#677482"
+        },
+        "$description": "AA twin: steel as copy",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "#677482",
+            "property": "--steel-text",
+            "name": "Steel text"
+          }
+        }
+      }
+    },
+    "neutrals": {
+      "paper": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "alpha": 1,
+          "hex": "#ffffff"
+        },
+        "$description": "page canvas",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "#FFFFFF",
+            "property": "--paper",
+            "name": "Paper"
+          }
+        }
+      },
+      "surface": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "alpha": 1,
+          "hex": "#ffffff"
+        },
+        "$description": "cards",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "#FFFFFF",
+            "property": "--surface",
+            "name": "Paper"
+          }
+        }
+      },
+      "surface-2": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9608,
+            0.9608,
+            0.9608
+          ],
+          "alpha": 1,
+          "hex": "#f5f5f5"
+        },
+        "$description": "sections set apart, resting cards, plates",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "#F5F5F5",
+            "property": "--surface-2",
+            "name": "Light gray"
+          }
+        }
+      },
+      "hairline": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9059,
+            0.9059,
+            0.9059
+          ],
+          "alpha": 1,
+          "hex": "#e7e7e7"
+        },
+        "$description": "borders",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "#E7E7E7",
+            "property": "--hairline",
+            "name": "Hairline"
+          }
+        }
+      },
+      "hairline-strong": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.8118,
+            0.8118,
+            0.8118
+          ],
+          "alpha": 1,
+          "hex": "#cfcfcf"
+        },
+        "$description": "a hairline under the pointer: the border of a control on hover",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "#CFCFCF",
+            "property": "--hairline-strong"
+          }
+        }
+      },
+      "faint": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.5451,
+            0.5765,
+            0.549
+          ],
+          "alpha": 1,
+          "hex": "#8b938c"
+        },
+        "$description": "rules and large type · never small text: 3.2:1 on white",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "#8B938C",
+            "property": "--faint",
+            "name": "Faint"
+          }
+        }
+      },
+      "muted": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.3647,
+            0.4,
+            0.3725
+          ],
+          "alpha": 1,
+          "hex": "#5d665f"
+        },
+        "$description": "secondary text · captions and labels (5.9:1 on white)",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "#5D665F",
+            "property": "--muted",
+            "name": "Muted"
+          }
+        }
+      },
+      "body": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.149,
+            0.1765,
+            0.1608
+          ],
+          "alpha": 1,
+          "hex": "#262d29"
+        },
+        "$description": "body text",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "#262D29",
+            "property": "--body",
+            "name": "Body"
+          }
+        }
+      },
+      "ink": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.0392,
+            0.0392,
+            0.0392
+          ],
+          "alpha": 1,
+          "hex": "#0a0a0a"
+        },
+        "$description": "headings · the workhorse black",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "#0A0A0A",
+            "property": "--ink",
+            "name": "Ink"
+          }
+        }
+      },
+      "pitch": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.0118,
+            0.0196,
+            0.0118
+          ],
+          "alpha": 1,
+          "hex": "#030503"
+        },
+        "$description": "dark surfaces · gradient anchor · never a text color",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "#030503",
+            "property": "--pitch",
+            "name": "Pitch"
+          }
+        }
+      }
+    },
+    "on-dark": {
+      "on-dark-heading": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "alpha": 1,
+          "hex": "#ffffff"
+        },
+        "$extensions": {
+          "com.khyzr": {
+            "css": "#FFFFFF",
+            "property": "--on-dark-heading",
+            "name": "Paper"
+          }
+        }
+      },
+      "on-dark-soft": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9333,
+            0.949,
+            0.9333
+          ],
+          "alpha": 1,
+          "hex": "#eef2ee"
+        },
+        "$description": "statement text, labels on dark",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "#EEF2EE",
+            "property": "--on-dark-soft"
+          }
+        }
+      },
+      "on-dark-body": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.7843,
+            0.8078,
+            0.7882
+          ],
+          "alpha": 1,
+          "hex": "#c8cec9"
+        },
+        "$description": "footer links, body",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "#C8CEC9",
+            "property": "--on-dark-body"
+          }
+        }
+      },
+      "on-dark-muted": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.5529,
+            0.5804,
+            0.5608
+          ],
+          "alpha": 1,
+          "hex": "#8d948f"
+        },
+        "$description": "secondary text",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "#8D948F",
+            "property": "--on-dark-muted"
+          }
+        }
+      },
+      "on-dark-faint": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.4824,
+            0.5098,
+            0.4902
+          ],
+          "alpha": 1,
+          "hex": "#7b827d"
+        },
+        "$description": "labels and legal on ink and pitch (5:1) · on green-900 it falls to 3.6:1: large text only there",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "#7B827D",
+            "property": "--on-dark-faint"
+          }
+        }
+      },
+      "on-dark-accent": {
+        "$type": "color",
+        "$value": "{color.greens-scale.green-300}",
+        "$description": "the accent word",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "var(--green-300)",
+            "property": "--on-dark-accent",
+            "name": "Light green"
+          }
+        }
+      },
+      "on-dark-divider": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "alpha": 0.1,
+          "hex": "#ffffff"
+        },
+        "$extensions": {
+          "com.khyzr": {
+            "css": "rgba(255,255,255,.10)",
+            "property": "--on-dark-divider"
+          }
+        }
+      },
+      "on-dark-border": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "alpha": 0.11,
+          "hex": "#ffffff"
+        },
+        "$extensions": {
+          "com.khyzr": {
+            "css": "rgba(255,255,255,.11)",
+            "property": "--on-dark-border"
+          }
+        }
+      }
+    },
+    "interface-roles": {
+      "bg": {
+        "$type": "color",
+        "$value": "{color.neutrals.paper}",
+        "$description": "the page",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "var(--paper)",
+            "property": "--bg",
+            "name": "Paper"
+          }
+        }
+      },
+      "fg-heading": {
+        "$type": "color",
+        "$value": "{color.neutrals.ink}",
+        "$description": "the color of a heading",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "var(--ink)",
+            "property": "--fg-heading",
+            "name": "Ink"
+          }
+        }
+      },
+      "fg-body": {
+        "$type": "color",
+        "$value": "{color.neutrals.body}",
+        "$description": "the color of reading text",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "var(--body)",
+            "property": "--fg-body",
+            "name": "Body"
+          }
+        }
+      },
+      "link": {
+        "$type": "color",
+        "$value": "{color.greens-scale.green-500}",
+        "$description": "a link in a document or on a reference page · the primary is text-safe",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "var(--green-500)",
+            "property": "--link",
+            "name": "khyzr Green"
+          }
+        }
+      },
+      "accent": {
+        "$type": "color",
+        "$value": "{color.greens-scale.green-500}",
+        "$description": "the one green phrase, a dot, a rule",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "var(--green-500)",
+            "property": "--accent",
+            "name": "khyzr Green"
+          }
+        }
+      },
+      "focus-ring": {
+        "$type": "color",
+        "$value": "{color.greens-scale.green-500}",
+        "$description": "keyboard focus on light",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "var(--green-500)",
+            "property": "--focus-ring",
+            "name": "khyzr Green"
+          }
+        }
+      },
+      "focus-ring-on-dark": {
+        "$type": "color",
+        "$value": "{color.on-dark.on-dark-heading}",
+        "$description": "keyboard focus on dark: white",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "var(--on-dark-heading)",
+            "property": "--focus-ring-on-dark",
+            "name": "Paper"
+          }
+        }
+      },
+      "info": {
+        "$type": "color",
+        "$value": "{color.secondaries.cobalt}",
+        "$description": "informational chips, links out, scheduled states",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "var(--cobalt)",
+            "property": "--info",
+            "name": "Cobalt"
+          }
+        }
+      },
+      "highlight": {
+        "$type": "color",
+        "$value": "{color.secondaries.marigold}",
+        "$description": "emphasis graphics, number accents",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "var(--marigold)",
+            "property": "--highlight",
+            "name": "Marigold"
+          }
+        }
+      },
+      "highlight-text": {
+        "$type": "color",
+        "$value": "{color.secondaries.marigold-text}",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "var(--marigold-text)",
+            "property": "--highlight-text",
+            "name": "Marigold text"
+          }
+        }
+      },
+      "success": {
+        "$type": "color",
+        "$value": "{color.greens-scale.green-500}",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "var(--green-500)",
+            "property": "--success",
+            "name": "khyzr Green"
+          }
+        }
+      },
+      "error": {
+        "$type": "color",
+        "$value": "{color.secondaries.terracotta-text}",
+        "$description": "feedback only, never in a chart",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "var(--terracotta-text)",
+            "property": "--error",
+            "name": "Terracotta text"
+          }
+        }
+      },
+      "selection": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.0392,
+            0.4118,
+            0.0392
+          ],
+          "alpha": 0.16,
+          "hex": "#0a690a"
+        },
+        "$description": "behind selected text",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "rgba(10,105,10,.16)",
+            "property": "--selection"
+          }
+        }
+      }
+    },
+    "data-viz-roles": {
+      "viz-lead": {
+        "$type": "color",
+        "$value": "{color.greens-scale.green-500}",
+        "$description": "series 1, always green",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "var(--green-500)",
+            "property": "--viz-lead",
+            "name": "khyzr Green"
+          }
+        }
+      },
+      "viz-lead-deep": {
+        "$type": "color",
+        "$value": "{color.greens-scale.green-700}",
+        "$description": "line strokes, endpoint dots",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "var(--green-700)",
+            "property": "--viz-lead-deep",
+            "name": "Forest"
+          }
+        }
+      },
+      "viz-2": {
+        "$type": "color",
+        "$value": "{color.secondaries.cobalt}",
+        "$description": "second series",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "var(--cobalt)",
+            "property": "--viz-2",
+            "name": "Cobalt"
+          }
+        }
+      },
+      "viz-3": {
+        "$type": "color",
+        "$value": "{color.secondaries.steel}",
+        "$description": "third series, comparison ghosts",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "var(--steel)",
+            "property": "--viz-3",
+            "name": "Steel"
+          }
+        }
+      },
+      "viz-4": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.7686,
+            0.7961,
+            0.8196
+          ],
+          "alpha": 1,
+          "hex": "#c4cbd1"
+        },
+        "$description": "steel tint: fourth series, remainders",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "#C4CBD1",
+            "property": "--viz-4",
+            "name": "Steel tint"
+          }
+        }
+      },
+      "signal": {
+        "$type": "color",
+        "$value": "{color.secondaries.terracotta}",
+        "$description": "flags, negatives, annotations only · never a series, never chrome",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "var(--terracotta)",
+            "property": "--signal",
+            "name": "Terracotta"
+          }
+        }
+      },
+      "signal-text": {
+        "$type": "color",
+        "$value": "{color.secondaries.terracotta-text}",
+        "$description": "terracotta for small text and on tints",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "var(--terracotta-text)",
+            "property": "--signal-text",
+            "name": "Terracotta text"
+          }
+        }
+      },
+      "signal-tint": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9725,
+            0.9216,
+            0.902
+          ],
+          "alpha": 1,
+          "hex": "#f8ebe6"
+        },
+        "$description": "the wash behind a signal chip",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "#F8EBE6",
+            "property": "--signal-tint",
+            "name": "Signal tint"
+          }
+        }
+      }
+    },
+    "brand-gradient": {
+      "gradient-hero": {
+        "$type": "gradient",
+        "$value": [
+          {
+            "color": {
+              "colorSpace": "srgb",
+              "components": [
+                0.0118,
+                0.0196,
+                0.0118
+              ],
+              "alpha": 1,
+              "hex": "#030503"
+            },
+            "position": 0.0
+          },
+          {
+            "color": {
+              "colorSpace": "srgb",
+              "components": [
+                0.0157,
+                0.2,
+                0.0157
+              ],
+              "alpha": 1,
+              "hex": "#043304"
+            },
+            "position": 0.36
+          },
+          {
+            "color": {
+              "colorSpace": "srgb",
+              "components": [
+                0.0235,
+                0.2745,
+                0.0235
+              ],
+              "alpha": 1,
+              "hex": "#064606"
+            },
+            "position": 0.58
+          },
+          {
+            "color": {
+              "colorSpace": "srgb",
+              "components": [
+                0.1843,
+                0.502,
+                0.1843
+              ],
+              "alpha": 1,
+              "hex": "#2f802f"
+            },
+            "position": 0.71
+          },
+          {
+            "color": {
+              "colorSpace": "srgb",
+              "components": [
+                0.5216,
+                0.7059,
+                0.5216
+              ],
+              "alpha": 1,
+              "hex": "#85b485"
+            },
+            "position": 0.84
+          },
+          {
+            "color": {
+              "colorSpace": "srgb",
+              "components": [
+                0.8588,
+                0.9137,
+                0.8588
+              ],
+              "alpha": 1,
+              "hex": "#dbe9db"
+            },
+            "position": 0.93
+          },
+          {
+            "color": {
+              "colorSpace": "srgb",
+              "components": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "alpha": 1,
+              "hex": "#ffffff"
+            },
+            "position": 1.0
+          }
+        ],
+        "$description": "pitch, green-900, forest, leaf, mint, green-100, paper",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "linear-gradient(to bottom in oklab,#030503 0%,#043304 36%,#064606 58%,#2F802F 71%,#85B485 84%,#DBE9DB 93%,#FFFFFF 100%)",
+            "property": "--gradient-hero",
+            "direction": "to bottom",
+            "interpolation": "oklab"
+          }
+        }
+      },
+      "gradient-hero-srgb": {
+        "$type": "gradient",
+        "$value": [
+          {
+            "color": {
+              "colorSpace": "srgb",
+              "components": [
+                0.0118,
+                0.0196,
+                0.0118
+              ],
+              "alpha": 1,
+              "hex": "#030503"
+            },
+            "position": 0.0
+          },
+          {
+            "color": {
+              "colorSpace": "srgb",
+              "components": [
+                0.0157,
+                0.2,
+                0.0157
+              ],
+              "alpha": 1,
+              "hex": "#043304"
+            },
+            "position": 0.36
+          },
+          {
+            "color": {
+              "colorSpace": "srgb",
+              "components": [
+                0.0235,
+                0.2745,
+                0.0235
+              ],
+              "alpha": 1,
+              "hex": "#064606"
+            },
+            "position": 0.58
+          },
+          {
+            "color": {
+              "colorSpace": "srgb",
+              "components": [
+                0.1843,
+                0.502,
+                0.1843
+              ],
+              "alpha": 1,
+              "hex": "#2f802f"
+            },
+            "position": 0.71
+          },
+          {
+            "color": {
+              "colorSpace": "srgb",
+              "components": [
+                0.5216,
+                0.7059,
+                0.5216
+              ],
+              "alpha": 1,
+              "hex": "#85b485"
+            },
+            "position": 0.84
+          },
+          {
+            "color": {
+              "colorSpace": "srgb",
+              "components": [
+                0.8588,
+                0.9137,
+                0.8588
+              ],
+              "alpha": 1,
+              "hex": "#dbe9db"
+            },
+            "position": 0.93
+          },
+          {
+            "color": {
+              "colorSpace": "srgb",
+              "components": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "alpha": 1,
+              "hex": "#ffffff"
+            },
+            "position": 1.0
+          }
+        ],
+        "$description": "the same ramp for a renderer without OKLab",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "linear-gradient(to bottom,#030503 0%,#043304 36%,#064606 58%,#2F802F 71%,#85B485 84%,#DBE9DB 93%,#FFFFFF 100%)",
+            "property": "--gradient-hero-srgb",
+            "direction": "to bottom",
+            "interpolation": "srgb"
+          }
+        }
+      }
+    }
+  },
+  "typography": {
+    "families": {
+      "font-display": {
+        "$type": "fontFamily",
+        "$value": [
+          "Outfit",
+          "system-ui",
+          "sans-serif"
+        ],
+        "$extensions": {
+          "com.khyzr": {
+            "css": "\"Outfit\",system-ui,sans-serif",
+            "property": "--font-display"
+          }
+        }
+      },
+      "font-text": {
+        "$type": "fontFamily",
+        "$value": [
+          "Outfit",
+          "system-ui",
+          "sans-serif"
+        ],
+        "$extensions": {
+          "com.khyzr": {
+            "css": "\"Outfit\",system-ui,sans-serif",
+            "property": "--font-text"
+          }
+        }
+      },
+      "font-tech": {
+        "$type": "fontFamily",
+        "$value": [
+          "Manrope",
+          "system-ui",
+          "sans-serif"
+        ],
+        "$description": "small technical text only, 11 to 13px",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "\"Manrope\",system-ui,sans-serif",
+            "property": "--font-tech"
+          }
+        }
+      },
+      "font-serif-accent": {
+        "$type": "fontFamily",
+        "$value": [
+          "Instrument Serif",
+          "Georgia",
+          "serif"
+        ],
+        "$extensions": {
+          "com.khyzr": {
+            "css": "\"Instrument Serif\",Georgia,serif",
+            "property": "--font-serif-accent"
+          }
+        }
+      },
+      "font-arabic": {
+        "$type": "fontFamily",
+        "$value": [
+          "Noto Naskh Arabic",
+          "Times New Roman",
+          "serif"
+        ],
+        "$extensions": {
+          "com.khyzr": {
+            "css": "\"Noto Naskh Arabic\",\"Times New Roman\",serif",
+            "property": "--font-arabic"
+          }
+        }
+      }
+    },
+    "weights-by-role": {
+      "fw-display": {
+        "$type": "fontWeight",
+        "$value": 600,
+        "$description": "display",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "600",
+            "property": "--fw-display"
+          }
+        }
+      },
+      "fw-ui": {
+        "$type": "fontWeight",
+        "$value": 500,
+        "$description": "interface, and a name inside a card or a list",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "500",
+            "property": "--fw-ui"
+          }
+        }
+      },
+      "fw-text": {
+        "$type": "fontWeight",
+        "$value": 400,
+        "$description": "reading",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "400",
+            "property": "--fw-text"
+          }
+        }
+      }
+    },
+    "sizes": {
+      "text-hero-word": {
+        "$type": "dimension",
+        "$value": {
+          "value": 210,
+          "unit": "px"
+        },
+        "$description": "the uppercase hero word: display, fw-display, -0.02em",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "clamp(54px,12.5vw,210px)",
+            "property": "--text-hero-word",
+            "fluid": {
+              "min": {
+                "value": 54,
+                "unit": "px"
+              },
+              "preferred": "12.5vw",
+              "max": {
+                "value": 210,
+                "unit": "px"
+              }
+            }
+          }
+        }
+      },
+      "text-title": {
+        "$type": "dimension",
+        "$value": {
+          "value": 3.7,
+          "unit": "rem"
+        },
+        "$description": "display, fw-display, tracking-display, leading-title",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "clamp(2.1rem,4.6vw,3.7rem)",
+            "property": "--text-title",
+            "fluid": {
+              "min": {
+                "value": 2.1,
+                "unit": "rem"
+              },
+              "preferred": "4.6vw",
+              "max": {
+                "value": 3.7,
+                "unit": "rem"
+              }
+            }
+          }
+        }
+      },
+      "text-quote": {
+        "$type": "dimension",
+        "$value": {
+          "value": 2.9,
+          "unit": "rem"
+        },
+        "$description": "display, fw-display, -0.022em",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "clamp(1.65rem,3.5vw,2.9rem)",
+            "property": "--text-quote",
+            "fluid": {
+              "min": {
+                "value": 1.65,
+                "unit": "rem"
+              },
+              "preferred": "3.5vw",
+              "max": {
+                "value": 2.9,
+                "unit": "rem"
+              }
+            }
+          }
+        }
+      },
+      "text-lede": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1.32,
+          "unit": "rem"
+        },
+        "$description": "text, fw-text, leading-lede",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "clamp(1.06rem,1.5vw,1.32rem)",
+            "property": "--text-lede",
+            "fluid": {
+              "min": {
+                "value": 1.06,
+                "unit": "rem"
+              },
+              "preferred": "1.5vw",
+              "max": {
+                "value": 1.32,
+                "unit": "rem"
+              }
+            }
+          }
+        }
+      },
+      "text-body": {
+        "$type": "dimension",
+        "$value": {
+          "value": 16,
+          "unit": "px"
+        },
+        "$description": "text, fw-text, leading-body",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "16px",
+            "property": "--text-body"
+          }
+        }
+      },
+      "text-eyebrow": {
+        "$type": "dimension",
+        "$value": {
+          "value": 12,
+          "unit": "px"
+        },
+        "$description": "tech (Manrope 600), tracking-eyebrow, uppercase",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "12px",
+            "property": "--text-eyebrow"
+          }
+        }
+      },
+      "text-label": {
+        "$type": "dimension",
+        "$value": {
+          "value": 11,
+          "unit": "px"
+        },
+        "$description": "tech (Manrope 600), tracking-label, uppercase",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "11px",
+            "property": "--text-label"
+          }
+        }
+      }
+    },
+    "line-height": {
+      "leading-title": {
+        "$type": "number",
+        "$value": 1.02,
+        "$description": "a title",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "1.02",
+            "property": "--leading-title"
+          }
+        }
+      },
+      "leading-lede": {
+        "$type": "number",
+        "$value": 1.5,
+        "$description": "a lede",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "1.5",
+            "property": "--leading-lede"
+          }
+        }
+      },
+      "leading-body": {
+        "$type": "number",
+        "$value": 1.55,
+        "$description": "reading text",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "1.55",
+            "property": "--leading-body"
+          }
+        }
+      }
+    },
+    "tracking": {
+      "tracking-display": {
+        "$type": "number",
+        "$value": -0.027,
+        "$description": "titles",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "-0.027em",
+            "property": "--tracking-display",
+            "unit": "em"
+          }
+        }
+      },
+      "tracking-eyebrow": {
+        "$type": "number",
+        "$value": 0.16,
+        "$description": "eyebrows, captions in the technical register",
+        "$extensions": {
+          "com.khyzr": {
+            "css": ".16em",
+            "property": "--tracking-eyebrow",
+            "unit": "em"
+          }
+        }
+      },
+      "tracking-label": {
+        "$type": "number",
+        "$value": 0.1,
+        "$description": "labels in the technical register",
+        "$extensions": {
+          "com.khyzr": {
+            "css": ".10em",
+            "property": "--tracking-label",
+            "unit": "em"
+          }
+        }
+      }
+    }
+  },
+  "space": {
+    "spacing-scale": {
+      "space-1": {
+        "$type": "dimension",
+        "$value": {
+          "value": 12,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.khyzr": {
+            "css": "12px",
+            "property": "--space-1"
+          }
+        }
+      },
+      "space-2": {
+        "$type": "dimension",
+        "$value": {
+          "value": 16,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.khyzr": {
+            "css": "16px",
+            "property": "--space-2"
+          }
+        }
+      },
+      "space-3": {
+        "$type": "dimension",
+        "$value": {
+          "value": 24,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.khyzr": {
+            "css": "24px",
+            "property": "--space-3"
+          }
+        }
+      },
+      "space-4": {
+        "$type": "dimension",
+        "$value": {
+          "value": 32,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.khyzr": {
+            "css": "32px",
+            "property": "--space-4"
+          }
+        }
+      },
+      "space-5": {
+        "$type": "dimension",
+        "$value": {
+          "value": 40,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.khyzr": {
+            "css": "40px",
+            "property": "--space-5"
+          }
+        }
+      },
+      "space-6": {
+        "$type": "dimension",
+        "$value": {
+          "value": 64,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.khyzr": {
+            "css": "64px",
+            "property": "--space-6"
+          }
+        }
+      }
+    },
+    "section-rhythm-and-layout": {
+      "section-pad-y": {
+        "$type": "dimension",
+        "$value": {
+          "value": 180,
+          "unit": "px"
+        },
+        "$description": "between a section's content and a change of ground",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "clamp(88px,14vh,180px)",
+            "property": "--section-pad-y",
+            "fluid": {
+              "min": {
+                "value": 88,
+                "unit": "px"
+              },
+              "preferred": "14vh",
+              "max": {
+                "value": 180,
+                "unit": "px"
+              }
+            }
+          }
+        }
+      },
+      "gutter": {
+        "$type": "dimension",
+        "$value": {
+          "value": 96,
+          "unit": "px"
+        },
+        "$description": "the page's side margin",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "clamp(24px,5vw,96px)",
+            "property": "--gutter",
+            "fluid": {
+              "min": {
+                "value": 24,
+                "unit": "px"
+              },
+              "preferred": "5vw",
+              "max": {
+                "value": 96,
+                "unit": "px"
+              }
+            }
+          }
+        }
+      },
+      "container": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1560,
+          "unit": "px"
+        },
+        "$description": "the column's cap; khyzr.com narrows it on a curve under 2560px wide",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "1560px",
+            "property": "--container"
+          }
+        }
+      },
+      "measure-reading": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1180,
+          "unit": "px"
+        },
+        "$description": "the manifesto's measure",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "1180px",
+            "property": "--measure-reading"
+          }
+        }
+      },
+      "measure-lede": {
+        "$type": "dimension",
+        "$value": {
+          "value": 600,
+          "unit": "px"
+        },
+        "$description": "a lede's measure",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "600px",
+            "property": "--measure-lede"
+          }
+        }
+      }
+    },
+    "breakpoint": {
+      "break-phone": {
+        "$type": "dimension",
+        "$value": {
+          "value": 640,
+          "unit": "px"
+        },
+        "$description": "at and below, a layout takes its phone form · a media query cannot read a custom property, so the query types the value",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "640px",
+            "property": "--break-phone"
+          }
+        }
+      }
+    },
+    "radii": {
+      "radius-s": {
+        "$type": "dimension",
+        "$value": {
+          "value": 9,
+          "unit": "px"
+        },
+        "$description": "small chips, a text link's focus shape",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "9px",
+            "property": "--radius-s"
+          }
+        }
+      },
+      "radius-m": {
+        "$type": "dimension",
+        "$value": {
+          "value": 16,
+          "unit": "px"
+        },
+        "$description": "cards, icon tiles, form plates, code blocks",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "16px",
+            "property": "--radius-m"
+          }
+        }
+      },
+      "radius-l": {
+        "$type": "dimension",
+        "$value": {
+          "value": 20,
+          "unit": "px"
+        },
+        "$description": "bands, grids, heroes, a photograph",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "20px",
+            "property": "--radius-l"
+          }
+        }
+      },
+      "radius-pill": {
+        "$type": "dimension",
+        "$value": {
+          "value": 999,
+          "unit": "px"
+        },
+        "$description": "all buttons, nav links, round controls",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "999px",
+            "property": "--radius-pill"
+          }
+        }
+      }
+    },
+    "keyboard-focus": {
+      "focus-width": {
+        "$type": "dimension",
+        "$value": {
+          "value": 2,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.khyzr": {
+            "css": "2px",
+            "property": "--focus-width"
+          }
+        }
+      },
+      "focus-offset": {
+        "$type": "dimension",
+        "$value": {
+          "value": 3,
+          "unit": "px"
+        },
+        "$extensions": {
+          "com.khyzr": {
+            "css": "3px",
+            "property": "--focus-offset"
+          }
+        }
+      }
+    },
+    "shadows": {
+      "shadow-lift": {
+        "$type": "shadow",
+        "$value": {
+          "color": {
+            "colorSpace": "srgb",
+            "components": [
+              0.0196,
+              0.2196,
+              0.0196
+            ],
+            "alpha": 0.34,
+            "hex": "#053805"
+          },
+          "offsetX": {
+            "value": 0,
+            "unit": "px"
+          },
+          "offsetY": {
+            "value": 24,
+            "unit": "px"
+          },
+          "blur": {
+            "value": 48,
+            "unit": "px"
+          },
+          "spread": {
+            "value": -30,
+            "unit": "px"
+          }
+        },
+        "$description": "a card lifted on hover",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "0 24px 48px -30px rgba(5,56,5,.34)",
+            "property": "--shadow-lift"
+          }
+        }
+      },
+      "shadow-button": {
+        "$type": "shadow",
+        "$value": {
+          "color": {
+            "colorSpace": "srgb",
+            "components": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "alpha": 0.55,
+            "hex": "#000000"
+          },
+          "offsetX": {
+            "value": 0,
+            "unit": "px"
+          },
+          "offsetY": {
+            "value": 14,
+            "unit": "px"
+          },
+          "blur": {
+            "value": 30,
+            "unit": "px"
+          },
+          "spread": {
+            "value": -12,
+            "unit": "px"
+          }
+        },
+        "$description": "the primary pill on hover",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "0 14px 30px -12px rgba(0,0,0,.55)",
+            "property": "--shadow-button"
+          }
+        }
+      },
+      "shadow-float": {
+        "$type": "shadow",
+        "$value": [
+          {
+            "color": {
+              "colorSpace": "srgb",
+              "components": [
+                0.0157,
+                0.2,
+                0.0157
+              ],
+              "alpha": 0.05,
+              "hex": "#043304"
+            },
+            "offsetX": {
+              "value": 0,
+              "unit": "px"
+            },
+            "offsetY": {
+              "value": 1,
+              "unit": "px"
+            },
+            "blur": {
+              "value": 2,
+              "unit": "px"
+            },
+            "spread": {
+              "value": 0,
+              "unit": "px"
+            }
+          },
+          {
+            "color": {
+              "colorSpace": "srgb",
+              "components": [
+                0.0157,
+                0.2,
+                0.0157
+              ],
+              "alpha": 0.38,
+              "hex": "#043304"
+            },
+            "offsetX": {
+              "value": 0,
+              "unit": "px"
+            },
+            "offsetY": {
+              "value": 30,
+              "unit": "px"
+            },
+            "blur": {
+              "value": 60,
+              "unit": "px"
+            },
+            "spread": {
+              "value": -34,
+              "unit": "px"
+            }
+          }
+        ],
+        "$description": "a sheet that floats at rest",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "0 1px 2px rgba(4,51,4,.05),0 30px 60px -34px rgba(4,51,4,.38)",
+            "property": "--shadow-float"
+          }
+        }
+      },
+      "shadow-held": {
+        "$type": "shadow",
+        "$value": [
+          {
+            "color": {
+              "colorSpace": "srgb",
+              "components": [
+                0.0157,
+                0.2,
+                0.0157
+              ],
+              "alpha": 0.05,
+              "hex": "#043304"
+            },
+            "offsetX": {
+              "value": 0,
+              "unit": "px"
+            },
+            "offsetY": {
+              "value": 1,
+              "unit": "px"
+            },
+            "blur": {
+              "value": 2,
+              "unit": "px"
+            },
+            "spread": {
+              "value": 0,
+              "unit": "px"
+            }
+          },
+          {
+            "color": {
+              "colorSpace": "srgb",
+              "components": [
+                0.0157,
+                0.2,
+                0.0157
+              ],
+              "alpha": 0.5,
+              "hex": "#043304"
+            },
+            "offsetX": {
+              "value": 0,
+              "unit": "px"
+            },
+            "offsetY": {
+              "value": 48,
+              "unit": "px"
+            },
+            "blur": {
+              "value": 80,
+              "unit": "px"
+            },
+            "spread": {
+              "value": -36,
+              "unit": "px"
+            }
+          }
+        ],
+        "$description": "the same sheet while it is held",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "0 1px 2px rgba(4,51,4,.05),0 48px 80px -36px rgba(4,51,4,.5)",
+            "property": "--shadow-held"
+          }
+        }
+      }
+    },
+    "layers": {
+      "z-nav": {
+        "$type": "number",
+        "$value": 60,
+        "$description": "the fixed navigation",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "60",
+            "property": "--z-nav"
+          }
+        }
+      },
+      "z-scrollbar": {
+        "$type": "number",
+        "$value": 70,
+        "$description": "a custom scrollbar, over the navigation",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "70",
+            "property": "--z-scrollbar"
+          }
+        }
+      },
+      "z-skip": {
+        "$type": "number",
+        "$value": 100,
+        "$description": "the skip link, over everything",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "100",
+            "property": "--z-skip"
+          }
+        }
+      }
+    }
+  },
+  "motion": {
+    "curves": {
+      "ease-trace": {
+        "$type": "cubicBezier",
+        "$value": [
+          0.34,
+          1.45,
+          0.64,
+          1
+        ],
+        "$description": "entrances",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "cubic-bezier(.34,1.45,.64,1)",
+            "property": "--ease-trace"
+          }
+        }
+      },
+      "ease-pop": {
+        "$type": "cubicBezier",
+        "$value": [
+          0.34,
+          1.56,
+          0.64,
+          1
+        ],
+        "$description": "hovers, pulses",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "cubic-bezier(.34,1.56,.64,1)",
+            "property": "--ease-pop"
+          }
+        }
+      },
+      "ease-drift": {
+        "$type": "cubicBezier",
+        "$value": [
+          0.22,
+          0.9,
+          0.36,
+          1
+        ],
+        "$description": "growing bars, widths and rules; a card's lift",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "cubic-bezier(.22,.9,.36,1)",
+            "property": "--ease-drift"
+          }
+        }
+      },
+      "ease-standard": {
+        "$type": "cubicBezier",
+        "$value": [
+          0.25,
+          0.1,
+          0.25,
+          1
+        ],
+        "$description": "color, background, border and opacity",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "ease",
+            "property": "--ease-standard"
+          }
+        }
+      }
+    },
+    "clocks": {
+      "dur-enter": {
+        "$type": "duration",
+        "$value": {
+          "value": 900,
+          "unit": "ms"
+        },
+        "$description": "entrances",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "900ms",
+            "property": "--dur-enter"
+          }
+        }
+      },
+      "dur-stagger": {
+        "$type": "duration",
+        "$value": {
+          "value": 140,
+          "unit": "ms"
+        },
+        "$description": "the step between entrances, overlapping",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "140ms",
+            "property": "--dur-stagger"
+          }
+        }
+      },
+      "dur-hover": {
+        "$type": "duration",
+        "$value": {
+          "value": 500,
+          "unit": "ms"
+        },
+        "$description": "hovers",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "500ms",
+            "property": "--dur-hover"
+          }
+        }
+      },
+      "dur-pulse": {
+        "$type": "duration",
+        "$value": {
+          "value": 420,
+          "unit": "ms"
+        },
+        "$description": "the settle pulse",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "420ms",
+            "property": "--dur-pulse"
+          }
+        }
+      },
+      "dur-count": {
+        "$type": "duration",
+        "$value": {
+          "value": 1600,
+          "unit": "ms"
+        },
+        "$description": "count-ups",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "1600ms",
+            "property": "--dur-count"
+          }
+        }
+      },
+      "dur-color": {
+        "$type": "duration",
+        "$value": {
+          "value": 200,
+          "unit": "ms"
+        },
+        "$description": "a color, a border or a ground answering the pointer, on the standard ease",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "200ms",
+            "property": "--dur-color"
+          }
+        }
+      },
+      "dur-surface": {
+        "$type": "duration",
+        "$value": {
+          "value": 350,
+          "unit": "ms"
+        },
+        "$description": "a surface changing state, on the standard ease: the navigation's flip",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "350ms",
+            "property": "--dur-surface"
+          }
+        }
+      }
+    },
+    "distances": {
+      "rise-distance": {
+        "$type": "dimension",
+        "$value": {
+          "value": 30,
+          "unit": "px"
+        },
+        "$description": "how far an entrance rises",
+        "$extensions": {
+          "com.khyzr": {
+            "css": "30px",
+            "property": "--rise-distance"
+          }
+        }
+      },
+      "rise-scale": {
+        "$type": "number",
+        "$value": 0.96,
+        "$description": "the scale an entrance grows from",
+        "$extensions": {
+          "com.khyzr": {
+            "css": ".96",
+            "property": "--rise-scale"
+          }
+        }
+      }
+    }
+  }
+}

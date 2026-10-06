@@ -1,0 +1,371 @@
+/* khyzr.ai: the product's values, held in the design system as a checked copy.
+
+   The names are the site's own. Several are also khyzr's own tokens at other values
+   (--ink is one), so everything here stands under one scope and never on :root.
+   A value written in oklch(), or mixed from two, carries its sRGB hex beside it. */
+
+[data-brand="khyzr-ai"] {
+  /* The ground: black, a raised tone, the closing plate's tone */
+  --g0: #000;
+  --g1: oklch(16.5% .004 236);  /* #0D0F10 */
+  --g-band: oklch(15.5% .004 236);  /* #0B0C0E */
+
+  /* Hairlines */
+  --hair: oklch(23% .004 236);  /* #1B1D1F */
+  --hair2: oklch(29% .004 236);  /* #292C2D */
+
+  /* Ink: the light ink and the gray one */
+  --ink: oklch(93% .013 236);  /* #E0E9F0 */
+  --ink2: oklch(63% .015 236);  /* #818B91 */
+
+  /* The ramp, periwinkle to aqua */
+  --a1: #7280FC;
+  --a2: #62A5FA;
+  --a3: #52CAF7;
+  --a4: #43F0F4;
+
+  /* Type: one family, three weights, nine sizes */
+  --font: "Outfit",system-ui,sans-serif;
+  --fw-display: 600;
+  --fw-ui: 500;
+  --fw-text: 400;
+  --fs-h1: clamp(34px,4.4vw,62px);
+  --fs-feat: clamp(26px,2.23vw,32px);
+  --fs-h2: clamp(22px,1.67vw,24px);
+  --fs-cont: clamp(20px,1.53vw,22px);
+  --fs-h3: 18px;
+  --fs-lede: clamp(16px,1.25vw,18px);
+  --fs-body: 16px;
+  --fs-sm: 14px;
+  --fs-micro: 13px;
+
+  /* Type inside the product windows */
+  --ui-fs-tick: 9px;
+  --ui-fs-label: 10px;
+  --ui-fs-text: 11px;
+  --ui-fs-title: 12px;
+  --ui-fs-fig: 16px;
+  --ui-fs-big: 20px;
+
+  /* Space */
+  --space-in: clamp(24px,2.2vw,32px);
+  --seam-major: clamp(76px,9.31vw,134px);
+  --seam-minor: clamp(51px,6.21vw,89px);
+  --sp-1: 8px;
+  --sp-2: 16px;
+  --sp-3: var(--space-in);
+  --sp-4: clamp(48px,4.45vw,64px);
+  --head-gap: calc(var(--sp-4) - var(--sp-3));
+  --tri-cols: repeat(3,minmax(0,1fr));
+
+  /* The column, the bar and the scroll map */
+  --frame: 1200px;
+  --pad: clamp(16px,2.2vw,24px);
+  --map-push: 0px;
+  --bleed: calc((100vw - var(--map-push)) / 2 - 50%);
+  --nav-h: 75px;
+  --nav-frost: rgb(0 0 0 / .74);
+  --nav-blur: 20px;
+  --map-w: 26px;
+  --hero-head-ch: 12ch;
+  --hero-lede-ch: 34ch;
+
+  /* Corners */
+  --r-2xs: 2px;
+  --r-xs: 4px;
+  --r-sm: 6px;
+  --r-md: 8px;
+  --r-lg: 12px;
+  --r-xl: 16px;
+  --r-pill: 999px;
+
+  /* Focus */
+  --focus-w: 2px;
+  --focus-o: 3px;
+  --focus-r: 4px;
+  --focus-ring: var(--a1);  /* #7280FC */
+
+  /* Motion */
+  --ease-out: cubic-bezier(.23,1,.32,1);
+  --ease-in-out: cubic-bezier(.77,0,.175,1);
+  --ease-long: cubic-bezier(.16,1,.3,1);
+
+  /* Frosted panels */
+  --frost-bg: rgba(4,6,10,.42);
+  --frost-blur: 22px;
+  --frost-edge: rgba(255,255,255,.085);
+  --frost-hi: inset 0 1px 0 rgba(255,255,255,.075);
+  --frost-shadow: 0 28px 60px -28px rgba(0,0,0,.9), 0 2px 4px rgba(0,0,0,.35);
+  --frost2-bg: rgba(8,10,16,.55);
+  --frost2-edge: rgba(255,255,255,.12);
+  --frost2-shadow: 0 40px 90px -30px rgba(0,0,0,.95), 0 3px 8px rgba(0,0,0,.4);
+
+  /* The product windows */
+  --win-ground: oklch(10.5% .006 236);  /* #030405 */
+  --win-chrome: oklch(17% .005 236);  /* #0D1011 */
+
+  /* Status */
+  --ok: oklch(76% .16 152);  /* #52CD7D */
+  --warn: oklch(80% .15 82);  /* #EDB333 */
+  --danger: oklch(68% .19 25);  /* #F75D59 */
+  --info: var(--a2);  /* #62A5FA */
+
+  /* The lit ring */
+  --edge-strength: 1;
+  --edge-hot: var(--a3);  /* #52CAF7 */
+  --edge-hair: var(--hair2);  /* #292C2D */
+
+  /* The agents' identity pairs: the light stop, then the deep one */
+  --ag-finance-1: #9ECD3B;
+  --ag-finance-2: #1AA96C;
+  --ag-customers-1: #42D5B9;
+  --ag-customers-2: #1BA1B1;
+  --ag-operations-1: #DEB53B;
+  --ag-operations-2: #D17416;
+  --ag-security-1: #DA93F6;
+  --ag-security-2: #9173FB;
+  --ag-strategy-1: #4AC9F7;
+  --ag-strategy-2: #408DFB;
+  --ag-dataquality-1: #CFD1D3;
+  --ag-dataquality-2: #A0A5A9;
+
+  /* A dial the site's lab reads; it is 1 on the page */
+  --amt: 1;
+}
+
+/* The root, at (max-width: 640px) */
+@media (max-width: 640px) {
+  [data-brand="khyzr-ai"] {
+    --nav-h: 60px;
+    --nav-frost: rgb(0 0 0 / .88);
+  }
+}
+
+/* The root, at (max-height: 500px) and (orientation: landscape) */
+@media (max-height: 500px) and (orientation: landscape) {
+  [data-brand="khyzr-ai"] {
+    --nav-h: 58px;
+  }
+}
+
+/* The root, at (max-height: 360px) and (orientation: landscape) */
+@media (max-height: 360px) and (orientation: landscape) {
+  [data-brand="khyzr-ai"] {
+    --nav-h: 52px;
+  }
+}
+
+/* The capability ramp before a capability is chosen: the registered defaults, the brand ramp */
+[data-brand="khyzr-ai"] {
+  --k1: #7280FC;
+  --k2: #62A5FA;
+  --k3: #52CAF7;
+  --k4: #43F0F4;
+}
+
+/* On the hero (the site's .hero) */
+[data-brand="khyzr-ai"] [data-surface="hero"] {
+  --fs-h1: clamp(34px,4.4vw,62px);
+  --hero-head-ch: 16ch;
+  --hero-lede-ch: 48ch;
+}
+
+/* On the hero (the site's .hero), at (max-width: 1119px) */
+@media (max-width: 1119px) {
+  [data-brand="khyzr-ai"] [data-surface="hero"] {
+    --fs-h1: clamp(34px,5.2vw,54px);
+  }
+}
+
+/* On the hero (the site's .hero), at (max-width: 720px) */
+@media (max-width: 720px) {
+  [data-brand="khyzr-ai"] [data-surface="hero"] {
+    --fs-h1: clamp(34px,calc(10vw + 1px),44px);
+  }
+}
+
+/* On the hero (the site's .hero), at (max-height: 360px) and (orientation: landscape) */
+@media (max-height: 360px) and (orientation: landscape) {
+  [data-brand="khyzr-ai"] [data-surface="hero"] {
+    --fs-h1: 36px;
+  }
+}
+
+/* In the console (the site's #console): the window's own surfaces, frost and status */
+[data-brand="khyzr-ai"] [data-surface="console"] {
+  /* Frosted panels */
+  --frost-bg: rgba(4,6,10,.62);
+  --frost-blur: 25px;
+  --frost-edge: rgba(255,255,255,.05);
+  --frost2-bg: rgba(8,10,16,.75);
+  --frost2-edge: rgba(255,255,255,.085);
+  --frost-shadow: 0 28px 60px -28px rgba(0,0,0,.72), 0 2px 4px rgba(0,0,0,.28);
+  --frost2-shadow: 0 40px 90px -30px rgba(0,0,0,.76), 0 3px 8px rgba(0,0,0,.32);
+
+  /* The product windows */
+  --win-ground: oklch(8% .006 236);  /* #010202 */
+  --win-chrome: oklch(13% .005 236);  /* #060809 */
+
+  /* What each stop of the ramp means in the console */
+  --cw-actual: var(--a2);  /* #62A5FA */
+  --cw-plan: var(--a1);  /* #7280FC */
+  --cw-focus: var(--a3);  /* #52CAF7 */
+  --cw-live: var(--a4);  /* #43F0F4 */
+  --cw-quiet-1: oklch(60% .030 240);  /* #718391 */
+  --cw-quiet-2: oklch(48% .020 240);  /* #545F68 */
+
+  /* Status */
+  --ok: oklch(75% .155 152);  /* #53C97B */
+  --warn: oklch(78% .145 82);  /* #E5AD34 */
+  --danger: oklch(68% .19 25);  /* #F75D59 */
+  --info: var(--cw-plan);  /* #7280FC */
+  --ok-fill: color-mix(in oklab,var(--ok) 14%,transparent);
+  --warn-fill: color-mix(in oklab,var(--warn) 14%,transparent);
+  --danger-fill: color-mix(in oklab,var(--danger) 14%,transparent);
+  --info-fill: color-mix(in oklab,var(--info) 14%,transparent);
+}
+
+/* In the capabilities (the site's #capabilities): the chat window's own surfaces, frost and sizes */
+[data-brand="khyzr-ai"] [data-surface="capabilities"] {
+  /* Frosted panels */
+  --frost-bg: rgba(4,6,10,.62);
+  --frost-blur: 25px;
+  --frost-edge: rgba(255,255,255,.05);
+  --frost2-bg: rgba(8,10,16,.75);
+  --frost2-edge: rgba(255,255,255,.085);
+  --frost-shadow: 0 28px 60px -28px rgba(0,0,0,.72),0 2px 4px rgba(0,0,0,.28);
+  --frost2-shadow: 0 40px 90px -30px rgba(0,0,0,.76),0 3px 8px rgba(0,0,0,.32);
+
+  /* The product windows */
+  --win-ground: oklch(8% .006 236);  /* #010202 */
+  --win-chrome: oklch(13% .005 236);  /* #060809 */
+  --win-h: 460px;
+  --w-line: rgba(255,255,255,.07);
+  --w-fill: rgba(255,255,255,.06);
+
+  /* Also declared here */
+  --cui: .9;
+  --cv-q-r: calc(20px*var(--cui));
+  --list-w: 380px;
+  --chat-w: 700px;
+  --pair-gap: 72px;
+  --row-py: 12px;
+}
+
+/* In the capabilities (the site's #capabilities), at (max-width: 1239px) */
+@media (max-width: 1239px) {
+  [data-brand="khyzr-ai"] [data-surface="capabilities"] {
+    --list-w: 320px;
+    --pair-gap: 48px;
+  }
+}
+
+/* In the capabilities (the site's #capabilities), at (max-width: 1099px) */
+@media (max-width: 1099px) {
+  [data-brand="khyzr-ai"] [data-surface="capabilities"] {
+    --list-w: 272px;
+    --pair-gap: 32px;
+    --row-py: 16px;
+  }
+}
+
+/* In the capabilities (the site's #capabilities), at (min-width: 641px) and (max-width: 1099px) */
+@media (min-width: 641px) and (max-width: 1099px) {
+  [data-brand="khyzr-ai"] [data-surface="capabilities"] {
+    --ui-fs-label: 11px;
+    --ui-fs-text: 13px;
+    --ui-fs-title: 14px;
+    --win-h: 460px;
+  }
+}
+
+/* In the capabilities (the site's #capabilities), at (max-width: 640px) */
+@media (max-width: 640px) {
+  [data-brand="khyzr-ai"] [data-surface="capabilities"] {
+    --ui-fs-label: 12px;
+    --ui-fs-text: 14px;
+    --ui-fs-title: 15px;
+    --win-h: 570px;
+    --cui: 1;
+  }
+}
+
+/* In the capabilities (the site's #capabilities), at (max-width: 400px) */
+@media (max-width: 400px) {
+  [data-brand="khyzr-ai"] [data-surface="capabilities"] {
+    --win-h: 610px;
+  }
+}
+
+/* In the capabilities (the site's #capabilities), at (max-width: 360px) */
+@media (max-width: 360px) {
+  [data-brand="khyzr-ai"] [data-surface="capabilities"] {
+    --win-h: 620px;
+  }
+}
+
+/* In the capabilities (the site's #capabilities), at (min-width: 1100px) */
+@media (min-width: 1100px) {
+  [data-brand="khyzr-ai"] [data-surface="capabilities"] {
+    --ui-fs-label: 13px;
+    --ui-fs-text: 15px;
+    --ui-fs-title: 16px;
+    --cui: 1.2;
+  }
+}
+
+/* The capability "ap" (the site's .cap-step[data-id="ap"]) */
+[data-brand="khyzr-ai"] [data-capability="ap"] {
+  --k1: #1AA96C;
+  --k2: #21C43E;
+  --k3: #9ECD3B;
+  --k4: #E4DB3C;
+}
+
+/* The capability "market" (the site's .cap-step[data-id="market"]) */
+[data-brand="khyzr-ai"] [data-capability="market"] {
+  --k1: #408DFB;
+  --k2: #3EAAFA;
+  --k3: #4AC9F7;
+  --k4: #5BEAFB;
+}
+
+/* The capability "inventory" (the site's .cap-step[data-id="inventory"]) */
+[data-brand="khyzr-ai"] [data-capability="inventory"] {
+  --k1: #D17416;
+  --k2: #DB911F;
+  --k3: #DEB53B;
+  --k4: #DDDE3C;
+}
+
+/* The capability "infra" (the site's .cap-step[data-id="infra"]) */
+[data-brand="khyzr-ai"] [data-capability="infra"] {
+  --k1: #9173FB;
+  --k2: #B483FA;
+  --k3: #DA93F6;
+  --k4: #FBADEF;
+}
+
+/* The capability "threat" (the site's .cap-step[data-id="threat"]) */
+[data-brand="khyzr-ai"] [data-capability="threat"] {
+  --k1: #FB3758;
+  --k2: #FB6A56;
+  --k3: #F6935E;
+  --k4: #FAB56D;
+}
+
+/* The capability "ar" (the site's .cap-step[data-id="ar"]) */
+[data-brand="khyzr-ai"] [data-capability="ar"] {
+  --k1: #1BA1B1;
+  --k2: #23B9B9;
+  --k3: #42D5B9;
+  --k4: #43F9A5;
+}
+
+/* The capability "anything" (the site's .cap-step[data-id="anything"]) */
+[data-brand="khyzr-ai"] [data-capability="anything"] {
+  --k1: #A0A5A9;
+  --k2: #B5BABC;
+  --k3: #CFD1D3;
+  --k4: #E7E8E9;
+}
