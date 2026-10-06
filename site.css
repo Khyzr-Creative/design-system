@@ -1216,14 +1216,14 @@ html.scheme-dark .prose .tbd.redpen { background: #FFFFFF; color: #0A0A0A; }
 @container (max-width: 520px) { .fg-sf { grid-template-columns: minmax(0, 1fr); } .fg-sf-trio { gap: 8px; } }
 
 /* ---------- finished pieces, placed as their templates render them ---------- */
-.fg-tf { position: relative; aspect-ratio: 16 / 8.4; }
-.fg-tf-p { position: absolute; display: block; background: #fff; overflow: hidden; box-shadow: 0 0 0 1px var(--hairline), var(--shadow-float); }
-.fg-tf-p.s1 { left: 5%; top: 11%; width: 45%; aspect-ratio: 16 / 9; border-radius: .7cqw; }
-.fg-tf-p.s2 { left: 13.5%; top: 41%; width: 45%; aspect-ratio: 16 / 9; border-radius: .7cqw; }
-.fg-tf-p.d1 { left: 63%; top: 8%; width: 19.5%; aspect-ratio: 210 / 297; border-radius: .3cqw; }
-.fg-tf-p.d2 { left: 75.5%; top: 19%; width: 19.5%; aspect-ratio: 210 / 297; border-radius: .3cqw; }
-.fg-tf-p.c1 { left: 66.5%; top: 72%; width: 17%; aspect-ratio: 85 / 55; border-radius: .5cqw; z-index: 1; }
-.fg-tf-p.c2 { left: 55.5%; top: 60%; width: 17%; aspect-ratio: 85 / 55; border-radius: .5cqw; }
+.fg-fam { position: relative; aspect-ratio: 16 / 8.4; }
+.fg-fam-p { position: absolute; display: block; background: #fff; overflow: hidden; box-shadow: 0 0 0 1px var(--hairline), var(--shadow-float); }
+.fg-fam-p.s1 { left: 5%; top: 11%; width: 45%; aspect-ratio: 16 / 9; border-radius: .7cqw; }
+.fg-fam-p.s2 { left: 13.5%; top: 41%; width: 45%; aspect-ratio: 16 / 9; border-radius: .7cqw; }
+.fg-fam-p.d1 { left: 63%; top: 8%; width: 19.5%; aspect-ratio: 210 / 297; border-radius: .3cqw; }
+.fg-fam-p.d2 { left: 75.5%; top: 19%; width: 19.5%; aspect-ratio: 210 / 297; border-radius: .3cqw; }
+.fg-fam-p.c1 { left: 66.5%; top: 72%; width: 17%; aspect-ratio: 85 / 55; border-radius: .5cqw; z-index: 1; }
+.fg-fam-p.c2 { left: 55.5%; top: 60%; width: 17%; aspect-ratio: 85 / 55; border-radius: .5cqw; }
 .fg-real::after { content: ""; position: absolute; inset: 0; border-radius: inherit; box-shadow: inset 0 0 0 1px var(--hairline); pointer-events: none; }
 .fg-rp { display: grid; }
 .fg-rp-img { display: block; width: 100%; height: auto; }
