@@ -1122,7 +1122,7 @@ html.scheme-dark .prose .tbd.redpen { background: #FFFFFF; color: #0A0A0A; }
 .fg-ph > .fg-ph-a, .fg-ph > .fg-ph-b { display: block; }
 .fg-ph > .fg-ph-b { font-size: .917em; }
 /* a hairline that stays over a still set to the edges */
-.fg-ps::after, .fg-post::after, .fg-sl-f::after, .fg-ag-g::after, .fg-pm-ring::after { content: ""; position: absolute; inset: 0; border: 1px solid var(--p-hair2); border-radius: inherit; pointer-events: none; }
+.fg-pd::after, .fg-post::after, .fg-sl-f::after, .fg-ag-g::after, .fg-pm-ring::after { content: ""; position: absolute; inset: 0; border: 1px solid var(--p-hair2); border-radius: inherit; pointer-events: none; }
 
 .fg-pg { aspect-ratio: 16 / 9; }
 /* the still stands to the right: its left part shows, and its black runs on into the plate's */
@@ -1164,16 +1164,16 @@ html.scheme-dark .prose .tbd.redpen { background: #FFFFFF; color: #0A0A0A; }
 .fg-pc-img { display: block; width: 100%; height: auto; aspect-ratio: 3000 / 1762; }
 
 /* a product's slide: black, on the deck's own scale */
-.fg-ps { background: var(--p-ground); box-shadow: none; color: var(--p-ink); }
-.fg-ps .fg-s-wm { width: auto; height: 4cqw; bottom: 8%; }
-.fg-ps .fg-ln { background: color-mix(in srgb, var(--p-ink2) 40%, transparent); }
-.fg-ps-c { position: absolute; left: 12%; right: 12%; top: 50%; transform: translateY(-50%); text-align: center; font-family: var(--font-display); font-weight: var(--fw-display); font-size: 6.6cqw; line-height: 1.06; letter-spacing: -.025em; color: var(--p-ink); text-shadow: 0 .4cqw 2.4cqw rgba(0, 0, 0, .7); }
-.fg-ps-c.up { top: 42%; }
-.fg-ps-c.k { color: #000; text-shadow: none; }
-.fg-ps-t { position: absolute; left: 7%; right: 7%; top: 15%; font-family: var(--font-display); font-weight: var(--fw-ui); font-size: 4.4cqw; line-height: 1.1; letter-spacing: -.02em; }
-.fg-ps-shot { position: absolute; left: 15%; right: 15%; top: 7%; aspect-ratio: 3000 / 1762; }
-.fg-ps-cap { position: absolute; left: 7%; bottom: 9%; width: 26%; }
-.fg-ps-band { position: absolute; left: 0; right: 0; bottom: 0; aspect-ratio: 3840 / 328; }
+.fg-pd { background: var(--p-ground); box-shadow: none; color: var(--p-ink); }
+.fg-pd .fg-s-wm { width: auto; height: 4cqw; bottom: 8%; }
+.fg-pd .fg-ln { background: color-mix(in srgb, var(--p-ink2) 40%, transparent); }
+.fg-pd-c { position: absolute; left: 12%; right: 12%; top: 50%; transform: translateY(-50%); text-align: center; font-family: var(--font-display); font-weight: var(--fw-display); font-size: 6.6cqw; line-height: 1.06; letter-spacing: -.025em; color: var(--p-ink); text-shadow: 0 .4cqw 2.4cqw rgba(0, 0, 0, .7); }
+.fg-pd-c.up { top: 42%; }
+.fg-pd-c.k { color: #000; text-shadow: none; }
+.fg-pd-t { position: absolute; left: 7%; right: 7%; top: 15%; font-family: var(--font-display); font-weight: var(--fw-ui); font-size: 4.4cqw; line-height: 1.1; letter-spacing: -.02em; }
+.fg-pd-shot { position: absolute; left: 15%; right: 15%; top: 7%; aspect-ratio: 3000 / 1762; }
+.fg-pd-cap { position: absolute; left: 7%; bottom: 9%; width: 26%; }
+.fg-pd-band { position: absolute; left: 0; right: 0; bottom: 0; aspect-ratio: 3840 / 328; }
 
 /* a square post */
 .fg-po { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
