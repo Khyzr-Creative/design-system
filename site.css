@@ -660,6 +660,62 @@ html.scheme-dark .prose .tbd.redpen { background: #FFFFFF; color: #0A0A0A; }
 .table-hint { margin: calc(-1 * var(--space-2)) 0 var(--space-3); font-family: var(--font-tech); font-weight: 600; font-size: var(--text-label); letter-spacing: var(--tracking-label); text-transform: uppercase; color: var(--muted); }
 .table:focus-visible { outline: var(--focus-width) solid var(--focus-ring); outline-offset: var(--focus-offset); }
 
+/* ---------- the email signature maker (In use · Email signature) ----------
+   The form is the system's plate field and choice pills; each signature stands on a white plate, as it
+   arrives under an email. A signature styles itself inline, as mail needs: the site's table rules stop
+   at its edge. Without the script the form is hidden and the three signatures stand one under another. */
+.sig { display: grid; gap: var(--space-5); }
+.sig-form { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-3) var(--space-2); }
+.sig-brands { grid-column: 1 / -1; min-width: 0; margin: 0; padding: 0; border: 0; }
+.sig-label { display: block; margin: 0 0 7px; padding: 0; font: var(--fw-ui) 13px/1.4 var(--font-text); color: var(--body); }
+.sig-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+.sig-pill {
+  display: inline-flex; align-items: center; gap: 10px; height: 44px; padding: 0 20px 0 16px; border-radius: var(--radius-pill);
+  background: var(--surface-2); border: 1px solid transparent; color: var(--muted); font: var(--fw-ui) 15px/1 var(--font-text); cursor: pointer;
+  transition: border-color var(--dur-color) var(--ease-standard), color var(--dur-color) var(--ease-standard);
+}
+.sig-pill:hover { border-color: var(--hairline-strong); }
+.sig-pill input { width: 16px; height: 16px; margin: 0; accent-color: var(--khyzr-green); }
+.sig-pill input:focus-visible { outline: none; }
+.sig-pill:has(input:focus-visible) { outline: var(--focus-width) solid var(--focus-ring); outline-offset: var(--focus-offset); }
+.sig-pill:has(input:checked) { border-color: var(--khyzr-green); color: var(--ink); }
+.sig-field { display: flex; flex-direction: column; gap: 7px; min-width: 0; }
+.sig-field .sig-label { margin: 0; }
+.sig-input {
+  width: 100%; padding: 13px 16px; border: 1px solid transparent; border-radius: var(--radius-m); background: var(--surface-2);
+  font: var(--fw-text) 15px/1.45 var(--font-text); color: var(--body);
+  transition: background-color var(--dur-color) var(--ease-standard), border-color var(--dur-color) var(--ease-standard), box-shadow var(--dur-color) var(--ease-standard);
+}
+.sig-input:focus { outline: none; background: var(--paper); border-color: var(--khyzr-green); box-shadow: 0 0 0 3px rgba(10, 105, 10, .14); }
+.sig-note { font-size: 12.5px; line-height: 1.4; color: var(--muted); }
+.sig-note:empty { display: none; }
+.sig-field.is-error .sig-input { border-color: var(--error); background: rgba(182, 83, 44, .06); }
+.sig-field.is-error .sig-note { color: var(--error); }
+.sig-out { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-5) var(--space-3); }
+.sig-pane { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.prose .sig-pane .tech { margin: 0; }
+.sig-full { grid-column: 1 / -1; }
+.sig-mail { flex: 1; padding: clamp(22px, 4vw, 40px); border: 1px solid var(--hairline); border-radius: var(--radius-m); background: var(--paper); overflow-x: auto; }
+.sig-lines { display: grid; gap: 10px; width: min(100%, 440px); margin: 0 0 clamp(20px, 3vw, 32px); }
+.sig-lines i { display: block; height: 6px; border-radius: 3px; background: var(--hairline); }
+.sig-lines i:nth-child(2) { width: 96%; }
+.sig-lines i:nth-child(4) { width: 42%; }
+.sig-v { display: none; }
+.sig-v.is-on, .sig:not(.sig-on) .sig-v { display: block; }
+.sig:not(.sig-on) .sig-form, .sig:not(.sig-on) .sig-act { display: none; }
+.sig:not(.sig-on) .sig-v + .sig-v { margin-top: var(--space-3); padding-top: var(--space-3); border-top: 1px solid var(--hairline); }
+.sig-mail table { width: auto; border-collapse: collapse; font-size: inherit; }
+.sig-mail td { border: 0; vertical-align: top; }
+.sig-text { font: 13px/20px Arial, Helvetica, sans-serif; color: var(--body); white-space: pre-wrap; }
+.sig-act { display: flex; flex-wrap: wrap; align-items: center; gap: 12px var(--space-2); min-height: 44px; }
+.sig-said { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; line-height: 1.4; }
+.sig-said.is-done { color: var(--success); }
+.sig-said.is-fail { color: var(--error); }
+.sig-said svg { width: 18px; height: 18px; flex: none; }
+@media (max-width: 860px) {
+  .sig-form, .sig-out { grid-template-columns: minmax(0, 1fr); }
+}
+
 /* khyzr brand and design-system site: the figures' own sheet.
    A figure is a plate in a brand book: white, a hairline or a soft ground, type and color from the
    tokens, the marks and the stills placed as files. Every class here begins fg-, so nothing else
